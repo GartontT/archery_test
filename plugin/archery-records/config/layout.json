@@ -1,0 +1,5926 @@
+{
+ "pages": [
+  {
+   "slug": "target-indoor-individual",
+   "title": "Target Indoor Individual",
+   "rounds": [
+    "target-indoor-individual/wa-18-120-arrows",
+    "target-indoor-individual/wa-18-60-arrows",
+    "target-indoor-individual/wa-18-30-arrows",
+    "target-indoor-individual/wa-18-15-arrows-head-to-head-matchplay",
+    "target-indoor-individual/wa-25-60-arrows",
+    "target-indoor-individual/wa-25-30-arrows",
+    "target-indoor-individual/fita-18-12-arrows-archived",
+    "target-indoor-individual/fita-18-18-arrows-archived"
+   ]
+  },
+  {
+   "slug": "target-indoor-team",
+   "title": "Target Indoor Team",
+   "rounds": [
+    "target-indoor-team/team-round-eliminations-24-arrows",
+    "target-indoor-team/team-round-qualifications-180-arrows",
+    "target-indoor-team/mixed-team-round"
+   ]
+  },
+  {
+   "slug": "target-outdoor-individual",
+   "title": "Target Outdoor Individual",
+   "rounds": [
+    "target-outdoor-individual/gents-double-wa1440",
+    "target-outdoor-individual/gents-single-wa1440",
+    "target-outdoor-individual/ladies-provisional-double-wa1440",
+    "target-outdoor-individual/ladies-provisional-single-wa1440",
+    "target-outdoor-individual/cadet-master-ladies-double-wa1440-60-50-40-30",
+    "target-outdoor-individual/cadet-master-ladies-wa1440-60-50-40-30",
+    "target-outdoor-individual/youth-u15-wa1440-40-30-20-10",
+    "target-outdoor-individual/wa-900",
+    "target-outdoor-individual/90m-36-arrows",
+    "target-outdoor-individual/70m-144-arrows",
+    "target-outdoor-individual/70m-72-arrows",
+    "target-outdoor-individual/70m-36-arrows",
+    "target-outdoor-individual/60m-144-arrows",
+    "target-outdoor-individual/60m-72-arrows",
+    "target-outdoor-individual/60m-36-arrows",
+    "target-outdoor-individual/50m-144-arrows",
+    "target-outdoor-individual/50m-72-arrows",
+    "target-outdoor-individual/50m-36-arrows-80cm-face",
+    "target-outdoor-individual/50m-144-arrows-122cm-face-barebow",
+    "target-outdoor-individual/50m-72-arrows-122cm-face-barebow",
+    "target-outdoor-individual/50m-36-arrows-122cm-face-barebow",
+    "target-outdoor-individual/50m-36-arrows-122cm-face-wa1440",
+    "target-outdoor-individual/50m-15-arrows",
+    "target-outdoor-individual/40m-36-arrows-80cm-face",
+    "target-outdoor-individual/youth-u15-40m-36-arrow-80cm-face",
+    "target-outdoor-individual/youth-u15-40m-144-arrows-122cm-face",
+    "target-outdoor-individual/youth-u15-40m-72-arrows-122cm-face",
+    "target-outdoor-individual/youth-u15-40m-36-arrows-122cm-face",
+    "target-outdoor-individual/youth-u15-40m-15-arrows-80cm-face",
+    "target-outdoor-individual/youth-u15-30m-36-arrows-122cm-face",
+    "target-outdoor-individual/youth-u15-30m-72-arrows-122cm-face",
+    "target-outdoor-individual/30m-36-arrows-80cm-face",
+    "target-outdoor-individual/youth-u15-20m-36-arrows-80cm-face",
+    "target-outdoor-individual/youth-u15-10m-36-arrows-80cm-face",
+    "target-outdoor-individual/20m-36-arrows-122cm-face-archived",
+    "target-outdoor-individual/20m-72-arrows-122cm-face-archived",
+    "target-outdoor-individual/30m-72-arrows-122cm-face-archived",
+    "target-outdoor-individual/youth-fita-30-30-20-20-all-on-122cm-faces-archived",
+    "target-outdoor-individual/70m-18-arrows-archived",
+    "target-outdoor-individual/70m-12-arrows-archived"
+   ]
+  },
+  {
+   "slug": "target-outdoor-team",
+   "title": "Target Outdoor Team",
+   "rounds": [
+    "target-outdoor-team/team-round-60m-216-arrows",
+    "target-outdoor-team/mixed-team-round-60m-144-arrows",
+    "target-outdoor-team/team-round-50m-h2h-24-arrows",
+    "target-outdoor-team/team-round-70m-216-arrows",
+    "target-outdoor-team/team-round-50m-216-arrows",
+    "target-outdoor-team/mixed-team-round-50m-h2h-16-arrows",
+    "target-outdoor-team/mixed-team-round-50m-144-arrows",
+    "target-outdoor-team/team-round-70m-h2h-archived",
+    "target-outdoor-team/mixed-team-round-70m-h2h-archived"
+   ]
+  },
+  {
+   "slug": "records-field",
+   "title": "Field",
+   "rounds": [
+    "records-field/48-targets",
+    "records-field/24-targets-unmarked",
+    "records-field/24-targets-marked",
+    "records-field/24-targets-mixed",
+    "records-field/48-targets-archived",
+    "records-field/24-targets-unmarked-archived",
+    "records-field/24-targets-marked-archived",
+    "records-field/24-targets-mixed-archived"
+   ]
+  },
+  {
+   "slug": "3d-field",
+   "title": "3D Field",
+   "rounds": [
+    "3d-field/48-targets-unmarked",
+    "3d-field/24-targets-unmarked",
+    "3d-field/48-targets-unmarked-archived",
+    "3d-field/24-targets-unmarked-archived"
+   ]
+  },
+  {
+   "slug": "archived-results",
+   "title": "Archived Records",
+   "rounds": [
+    "archived-results/junior-gents-fita-18-archived",
+    "archived-results/junior-gents-outdoor-fita-archived",
+    "archived-results/junior-ladies-outdoor-fita-archived",
+    "archived-results/48-targets-archived",
+    "archived-results/24-targets-unmarked-archived",
+    "archived-results/24-targets-marked-archived",
+    "archived-results/24-targets-mixed-archived"
+   ]
+  }
+ ],
+ "rounds": {
+  "target-indoor-individual/wa-18-120-arrows": {
+   "page": "target-indoor-individual",
+   "heading": "WA 18 – 120 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-indoor-individual/wa-18-60-arrows": {
+   "page": "target-indoor-individual",
+   "heading": "WA 18 – 60 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-indoor-individual/wa-18-30-arrows": {
+   "page": "target-indoor-individual",
+   "heading": "WA 18 – 30 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-indoor-individual/wa-18-15-arrows-head-to-head-matchplay": {
+   "page": "target-indoor-individual",
+   "heading": "WA 18 – 15 arrows, Head to Head Matchplay",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-indoor-individual/wa-25-60-arrows": {
+   "page": "target-indoor-individual",
+   "heading": "WA 25 – 60 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-indoor-individual/wa-25-30-arrows": {
+   "page": "target-indoor-individual",
+   "heading": "WA 25 – 30 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-indoor-individual/fita-18-12-arrows-archived": {
+   "page": "target-indoor-individual",
+   "heading": "FITA 18 – 12 arrows",
+   "archived": true,
+   "section": "Archived records – no longer shot for",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-indoor-individual/fita-18-18-arrows-archived": {
+   "page": "target-indoor-individual",
+   "heading": "FITA 18 – 18 arrows",
+   "archived": true,
+   "section": "Archived records – no longer shot for",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-indoor-team/team-round-eliminations-24-arrows": {
+   "page": "target-indoor-team",
+   "heading": "Team Round - Eliminations (24 Arrows)",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-indoor-team/team-round-qualifications-180-arrows": {
+   "page": "target-indoor-team",
+   "heading": "Team Round - Qualifications (180 Arrows)",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-indoor-team/mixed-team-round": {
+   "page": "target-indoor-team",
+   "heading": "Mixed Team Round",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 2,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Senior",
+     "bow": "Compound"
+    },
+    {
+     "class": "Senior",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Senior",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Masters",
+     "bow": "Compound"
+    },
+    {
+     "class": "Masters",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Masters",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Juniors",
+     "bow": "Compound"
+    },
+    {
+     "class": "Juniors",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Juniors",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Cadet",
+     "bow": "Compound"
+    },
+    {
+     "class": "Cadet",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Cadet",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/gents-double-wa1440": {
+   "page": "target-outdoor-individual",
+   "heading": "Gents Double WA1440",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/gents-single-wa1440": {
+   "page": "target-outdoor-individual",
+   "heading": "Gents Single WA1440",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/ladies-provisional-double-wa1440": {
+   "page": "target-outdoor-individual",
+   "heading": "Ladies/Provisional Double WA1440",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/ladies-provisional-single-wa1440": {
+   "page": "target-outdoor-individual",
+   "heading": "Ladies/Provisional Single WA1440",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/cadet-master-ladies-double-wa1440-60-50-40-30": {
+   "page": "target-outdoor-individual",
+   "heading": "Cadet/Master Ladies Double WA1440 (60/50/40/30)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/cadet-master-ladies-wa1440-60-50-40-30": {
+   "page": "target-outdoor-individual",
+   "heading": "Cadet/Master Ladies WA1440 (60/50/40/30)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-wa1440-40-30-20-10": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) WA1440 (40/30/20/10)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/wa-900": {
+   "page": "target-outdoor-individual",
+   "heading": "WA 900",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/90m-36-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "90m – 36 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/70m-144-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "70m – 144 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/70m-72-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "70m – 72 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/70m-36-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "70m – 36 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/60m-144-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "60m – 144 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/60m-72-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "60m – 72 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/60m-36-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "60m – 36 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-144-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 144 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-72-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 72 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-36-arrows-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 36 arrows (80cm Face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-144-arrows-122cm-face-barebow": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 144 arrows (122cm face Barebow)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-72-arrows-122cm-face-barebow": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 72 arrows (122cm face Barebow)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-36-arrows-122cm-face-barebow": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 36 arrows (122cm face Barebow)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-36-arrows-122cm-face-wa1440": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 36 arrows (122cm face WA1440)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/50m-15-arrows": {
+   "page": "target-outdoor-individual",
+   "heading": "50m – 15 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/40m-36-arrows-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "40m – 36 arrows (80cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-40m-36-arrow-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 40m – 36 Arrow (80cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-40m-144-arrows-122cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 40m – 144 arrows (122cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-40m-72-arrows-122cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 40m – 72 arrows (122cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-40m-36-arrows-122cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 40m – 36 arrows (122cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-40m-15-arrows-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 40m – 15 arrows (80cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-30m-36-arrows-122cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 30m – 36 arrows (122cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-30m-72-arrows-122cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 30m – 72 arrows (122cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/30m-36-arrows-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "30m – 36 arrows (80cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-20m-36-arrows-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 20m – 36 arrows (80cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-u15-10m-36-arrows-80cm-face": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth (U15) 10m – 36 arrows (80cm face)",
+   "archived": false,
+   "section": null,
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    }
+   ]
+  },
+  "target-outdoor-individual/20m-36-arrows-122cm-face-archived": {
+   "page": "target-outdoor-individual",
+   "heading": "20m – 36 arrows (122cm face)",
+   "archived": true,
+   "section": "Archived records no longer shot for:",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/20m-72-arrows-122cm-face-archived": {
+   "page": "target-outdoor-individual",
+   "heading": "20m – 72 arrows (122cm face)",
+   "archived": true,
+   "section": "Archived records no longer shot for:",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/30m-72-arrows-122cm-face-archived": {
+   "page": "target-outdoor-individual",
+   "heading": "30m – 72 arrows (122cm face)",
+   "archived": true,
+   "section": "Archived records no longer shot for:",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/youth-fita-30-30-20-20-all-on-122cm-faces-archived": {
+   "page": "target-outdoor-individual",
+   "heading": "Youth FITA (30/30/20/20 – all on 122cm faces)",
+   "archived": true,
+   "section": "Archived records no longer shot for:",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Youth (U14) Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/70m-18-arrows-archived": {
+   "page": "target-outdoor-individual",
+   "heading": "70m – 18 arrows",
+   "archived": true,
+   "section": "Archived records no longer shot for:",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Junior Gents",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-individual/70m-12-arrows-archived": {
+   "page": "target-outdoor-individual",
+   "heading": "70m – 12 arrows",
+   "archived": true,
+   "section": "Archived records no longer shot for:",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Junior Gents",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-team/team-round-60m-216-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Team Round 60m - 216 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-team/mixed-team-round-60m-144-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Mixed Team Round 60m - 144 Arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 2,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "U18",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-team/team-round-50m-h2h-24-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Team Round 50m - H2H 24 Arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-team/team-round-70m-216-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Team Round 70m - 216 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-team/team-round-50m-216-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Team Round 50m - 216 arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-team/mixed-team-round-50m-h2h-16-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Mixed Team Round 50m - H2H 16 Arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 2,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Senior",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-team/mixed-team-round-50m-144-arrows": {
+   "page": "target-outdoor-team",
+   "heading": "Mixed Team Round 50m - 144 Arrows",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 2,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Senior",
+     "bow": "Compound"
+    },
+    {
+     "class": "U21",
+     "bow": "Compound"
+    },
+    {
+     "class": "U18",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "target-outdoor-team/team-round-70m-h2h-archived": {
+   "page": "target-outdoor-team",
+   "heading": "Team Round 70m - H2H (Archived)",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 3,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Gents",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "target-outdoor-team/mixed-team-round-70m-h2h-archived": {
+   "page": "target-outdoor-team",
+   "heading": "Mixed Team Round 70m - H2H (Archived)",
+   "archived": false,
+   "section": null,
+   "shape": "team",
+   "archer_columns": 2,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Senior",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "records-field/48-targets": {
+   "page": "records-field",
+   "heading": "48 Targets",
+   "archived": false,
+   "section": null,
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Men",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Women",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U21 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U21 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Longbow"
+    }
+   ]
+  },
+  "records-field/24-targets-unmarked": {
+   "page": "records-field",
+   "heading": "24 Targets Unmarked",
+   "archived": false,
+   "section": null,
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Men",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Women",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Longbow"
+    }
+   ]
+  },
+  "records-field/24-targets-marked": {
+   "page": "records-field",
+   "heading": "24 Targets Marked",
+   "archived": false,
+   "section": null,
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Men",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Women",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Longbow"
+    }
+   ]
+  },
+  "records-field/24-targets-mixed": {
+   "page": "records-field",
+   "heading": "24 Targets Mixed",
+   "archived": false,
+   "section": null,
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Men",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Women",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Women",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Men",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "50+ Women",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Gents (Youth)",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Compound"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "White Peg",
+     "class": "U15 Ladies (Youth)",
+     "bow": "Longbow"
+    }
+   ]
+  },
+  "records-field/48-targets-archived": {
+   "page": "records-field",
+   "heading": "48 Targets",
+   "archived": true,
+   "section": "Archived Instinctive Records",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Gents (Youth)",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Ladies (Youth)",
+     "bow": ""
+    }
+   ]
+  },
+  "records-field/24-targets-unmarked-archived": {
+   "page": "records-field",
+   "heading": "24 Targets Unmarked",
+   "archived": true,
+   "section": "Archived Instinctive Records",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Gents (Youth)",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Ladies (Youth)",
+     "bow": ""
+    }
+   ]
+  },
+  "records-field/24-targets-marked-archived": {
+   "page": "records-field",
+   "heading": "24 Targets Marked",
+   "archived": true,
+   "section": "Archived Instinctive Records",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U18 Gents",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Gents (Youth)",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Ladies (Youth)",
+     "bow": ""
+    }
+   ]
+  },
+  "records-field/24-targets-mixed-archived": {
+   "page": "records-field",
+   "heading": "24 Targets Mixed",
+   "archived": true,
+   "section": "Archived Instinctive Records",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Men",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Gents (Youth)",
+     "bow": ""
+    },
+    {
+     "peg": "White Peg",
+     "class": "U14 Ladies (Youth)",
+     "bow": ""
+    }
+   ]
+  },
+  "3d-field/48-targets-unmarked": {
+   "page": "3d-field",
+   "heading": "48 Targets Unmarked",
+   "archived": false,
+   "section": null,
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Longbow"
+    }
+   ]
+  },
+  "3d-field/24-targets-unmarked": {
+   "page": "3d-field",
+   "heading": "24 Targets Unmarked",
+   "archived": false,
+   "section": null,
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "50+ Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U21 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "U18 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U18 Ladies",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": "Longbow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Traditional"
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": "Longbow"
+    }
+   ]
+  },
+  "3d-field/48-targets-unmarked-archived": {
+   "page": "3d-field",
+   "heading": "48 Targets Unmarked",
+   "archived": true,
+   "section": "Archived Instinctive Records",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": ""
+    }
+   ]
+  },
+  "3d-field/24-targets-unmarked-archived": {
+   "page": "3d-field",
+   "heading": "24 Targets Unmarked",
+   "archived": true,
+   "section": "Archived Instinctive Records",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "50+ Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "U21 Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Gents",
+     "bow": ""
+    },
+    {
+     "peg": "Yellow Peg",
+     "class": "U15 Ladies",
+     "bow": ""
+    }
+   ]
+  },
+  "archived-results/junior-gents-fita-18-archived": {
+   "page": "archived-results",
+   "heading": "Junior Gents – FITA 18",
+   "archived": true,
+   "section": "Archived",
+   "shape": "category",
+   "archer_columns": 1,
+   "classification_keys": [
+    "category"
+   ],
+   "columns": [
+    "Category",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "category": "120 arrows",
+     "bow": "Compound"
+    },
+    {
+     "category": "120 arrows",
+     "bow": "Recurve"
+    },
+    {
+     "category": "60 arrows",
+     "bow": "Compound"
+    },
+    {
+     "category": "60 arrows",
+     "bow": "Recurve"
+    },
+    {
+     "category": "30 arrows",
+     "bow": "Compound"
+    },
+    {
+     "category": "30 arrows",
+     "bow": "Recurve"
+    },
+    {
+     "category": "12 arrows",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "archived-results/junior-gents-outdoor-fita-archived": {
+   "page": "archived-results",
+   "heading": "Junior Gents – Outdoor FITA",
+   "archived": true,
+   "section": "Archived",
+   "shape": "category",
+   "archer_columns": 1,
+   "classification_keys": [
+    "category"
+   ],
+   "columns": [
+    "Category",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "category": "Double FITA",
+     "bow": "Recurve"
+    },
+    {
+     "category": "Single FITA",
+     "bow": "Recurve"
+    },
+    {
+     "category": "FITA 900",
+     "bow": "Recurve"
+    },
+    {
+     "category": "90m – 36",
+     "bow": "Compound"
+    },
+    {
+     "category": "90m – 36",
+     "bow": "Recurve"
+    },
+    {
+     "category": "70m – 36",
+     "bow": "Recurve"
+    },
+    {
+     "category": "70m – 18",
+     "bow": "Recurve"
+    },
+    {
+     "category": "70m – 12",
+     "bow": "Recurve"
+    },
+    {
+     "category": "50m – 36",
+     "bow": "Recurve"
+    },
+    {
+     "category": "30m – 36",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "archived-results/junior-ladies-outdoor-fita-archived": {
+   "page": "archived-results",
+   "heading": "Junior Ladies – Outdoor FITA",
+   "archived": true,
+   "section": "Archived",
+   "shape": "individual",
+   "archer_columns": 1,
+   "classification_keys": [
+    "class"
+   ],
+   "columns": [
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "class": "Double FITA",
+     "bow": "Compound"
+    },
+    {
+     "class": "Single FITA",
+     "bow": "Compound"
+    },
+    {
+     "class": "70m – 36",
+     "bow": "Compound"
+    },
+    {
+     "class": "60m – 36",
+     "bow": "Compound"
+    },
+    {
+     "class": "50m – 36",
+     "bow": "Compound"
+    },
+    {
+     "class": "30m – 36",
+     "bow": "Compound"
+    }
+   ]
+  },
+  "archived-results/48-targets-archived": {
+   "page": "archived-results",
+   "heading": "48 Targets",
+   "archived": true,
+   "section": "Archived",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Junior Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Junior Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Junior Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Junior Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Junior Gents",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "archived-results/24-targets-unmarked-archived": {
+   "page": "archived-results",
+   "heading": "24 Targets Unmarked",
+   "archived": true,
+   "section": "Archived",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Recurve",
+     "bow": ""
+    }
+   ]
+  },
+  "archived-results/24-targets-marked-archived": {
+   "page": "archived-results",
+   "heading": "24 Targets Marked",
+   "archived": true,
+   "section": "Archived",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Recurve"
+    }
+   ]
+  },
+  "archived-results/24-targets-mixed-archived": {
+   "page": "archived-results",
+   "heading": "24 Targets Mixed",
+   "archived": true,
+   "section": "Archived",
+   "shape": "peg",
+   "archer_columns": 1,
+   "classification_keys": [
+    "peg",
+    "class"
+   ],
+   "columns": [
+    "Peg",
+    "Class",
+    "Bow",
+    "Score",
+    "Archer",
+    "Date",
+    "Club"
+   ],
+   "grid": [
+    {
+     "peg": "Red Peg",
+     "class": "Gents",
+     "bow": "Compound"
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Recurve",
+     "bow": ""
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Recurve",
+     "bow": ""
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Recurve",
+     "bow": ""
+    },
+    {
+     "peg": "Red Peg",
+     "class": "Recurve",
+     "bow": ""
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Gents",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Ladies",
+     "bow": "Barebow"
+    },
+    {
+     "peg": "Blue Peg",
+     "class": "Junior Gents",
+     "bow": "Barebow"
+    }
+   ]
+  }
+ }
+}

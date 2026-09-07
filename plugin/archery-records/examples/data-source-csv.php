@@ -24,7 +24,7 @@ define( 'ARCHERY_RECORDS_CSV_PATH', '/home/archery/private/records.csv' );
 /**
  * Map the round names used in the spreadsheet to the plugin's round keys.
  *
- * The full list of keys is in config/layout.json.
+ * The full list of keys is in config/rounds.json.
  */
 function archery_records_round_map() {
 	return array(

@@ -9,9 +9,10 @@
  * ###   returns and neither knows nor cares whether that came from        ###
  * ###   MySQL, a CSV on disk, an Excel export, or a web service.          ###
  * ###                                                                     ###
- * ###   Right now it returns SAMPLE DATA bundled with the plugin, so      ###
- * ###   that the tables can be built and looked at before anyone has      ###
- * ###   access to the real database.                                      ###
+ * ###   Right now it returns a snapshot of the real records database,     ###
+ * ###   bundled with the plugin, so that the pages can be built and       ###
+ * ###   reviewed offline. It is a copy taken on 7 September 2026 and it   ###
+ * ###   does not update.                                                  ###
  * ###                                                                     ###
  * ###   To connect the real database, implement exactly one function:     ###
  * ###                                                                     ###
@@ -20,10 +21,11 @@
  * ###   returning an array of submission rows in the shape documented     ###
  * ###   in DATA-CONTRACT.md (read that first - it is short).              ###
  * ###                                                                     ###
- * ###   There are three worked examples in examples/ showing how that     ###
- * ###   function looks for a MySQL table, for a CSV or Excel export on    ###
- * ###   disk, and for a JSON web service. Copy whichever one matches      ###
- * ###   and adjust the field names.                                       ###
+ * ###   examples/data-source-archery-ireland.php is the finished          ###
+ * ###   implementation for the live database. Copy it over this file      ###
+ * ###   and add the four credentials constants to wp-config.php.          ###
+ * ###   The CSV and REST examples alongside it are there in case the      ###
+ * ###   data ever moves somewhere else.                                   ###
  * ###                                                                     ###
  * ###########################################################################
  *
@@ -55,12 +57,12 @@ if ( ! function_exists( 'archery_records_fetch_submissions' ) ) {
 	 */
 	function archery_records_fetch_submissions() {
 
-		// --- SAMPLE DATA. Delete everything below when connecting the real source. ---
+		// --- BUNDLED SNAPSHOT. Replaced wholesale by the live implementation. ---
 
 		$path = ARCHERY_RECORDS_DIR . 'data/fixtures.json';
 
 		if ( ! is_readable( $path ) ) {
-			throw new RuntimeException( 'Sample data file is missing: ' . $path );
+			throw new RuntimeException( 'Bundled records snapshot is missing: ' . $path );
 		}
 
 		$raw = file_get_contents( $path );

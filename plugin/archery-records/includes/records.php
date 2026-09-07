@@ -27,6 +27,12 @@ function archery_records_build_progressions( $submissions ) {
 	$grouped = array();
 
 	foreach ( $submissions as $submission ) {
+		// A vacant row records that a category exists, not that anybody shot a score,
+		// so it takes no part in the progression.
+		if ( ! empty( $submission['vacant'] ) ) {
+			continue;
+		}
+
 		$key = archery_records_record_key( $submission );
 		if ( ! isset( $grouped[ $key ] ) ) {
 			$grouped[ $key ] = array();

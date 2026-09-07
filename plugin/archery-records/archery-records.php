@@ -26,7 +26,7 @@ define( 'ARCHERY_RECORDS_URL', plugin_dir_url( __FILE__ ) );
 require_once ARCHERY_RECORDS_DIR . 'includes/data-source.php';
 require_once ARCHERY_RECORDS_DIR . 'includes/normalise.php';
 require_once ARCHERY_RECORDS_DIR . 'includes/cache.php';
-require_once ARCHERY_RECORDS_DIR . 'includes/layout.php';
+require_once ARCHERY_RECORDS_DIR . 'includes/rounds.php';
 require_once ARCHERY_RECORDS_DIR . 'includes/records.php';
 require_once ARCHERY_RECORDS_DIR . 'includes/render.php';
 
@@ -58,7 +58,7 @@ add_action( 'wp_enqueue_scripts', 'archery_records_register_assets' );
  *   [archery_records page="target-indoor-individual"]
  *
  * Attributes:
- *   page           Required. The page key, as listed in config/layout.json.
+ *   page           Required. One of the keys returned by archery_records_pages().
  *   heading_level  Optional, default 3. The heading tag used for round titles.
  *   archived       Optional, default "yes". Set to "no" to leave out the
  *                  "no longer shot for" tables at the bottom of a page.
@@ -84,14 +84,14 @@ function archery_records_shortcode( $atts ) {
 		);
 	}
 
-	$layout = archery_records_get_layout();
-	if ( ! isset( $layout['pages'][ $page_key ] ) ) {
+	$pages = archery_records_pages();
+	if ( ! isset( $pages[ $page_key ] ) ) {
 		return archery_records_admin_only_notice(
 			sprintf(
 				/* translators: 1: the page key that was asked for, 2: the list of keys that do exist */
-				__( 'No records page called "%1$s". The pages defined in config/layout.json are: %2$s', 'archery-records' ),
+				__( 'No records page called "%1$s". The pages are: %2$s', 'archery-records' ),
 				$page_key,
-				implode( ', ', array_keys( $layout['pages'] ) )
+				implode( ', ', array_keys( $pages ) )
 			)
 		);
 	}

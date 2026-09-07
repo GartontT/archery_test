@@ -6,61 +6,56 @@ It replaces the current arrangement, where each table is hand-typed HTML pasted 
 
 ## State of play
 
-The plugin is complete and works. It is currently running on **sample data**, because the real records database has not been reached yet: the current record holders in `data/fixtures.json` are real, copied from the live site on 2 September 2026, but every previous holder is invented placeholder data with names like "A. Sample".
+Complete and working, against a real snapshot of the records database taken on 7 September 2026: 65 tables across six pages, 675 records, 133 of which carry history.
 
-Connecting the real database means replacing one file. See `DATA-CONTRACT.md`.
+It is not yet reading the live database. That is one file — copy `examples/data-source-archery-ireland.php` over `includes/data-source.php` and add four credentials to `wp-config.php`. See `INSTALL.md`.
 
-## The three things worth knowing
+## The four things worth knowing
 
-**One shortcode per page.** `[archery_records page="target-indoor-individual"]` renders every round on that page, headings and all. Seven pages, seven shortcodes. After the switch-over, a new round or a new category appears on the site because it appeared in the database — nobody edits a page again.
+**One shortcode per page.** `[archery_records page="target-indoor-individual"]` renders every round on that page, headings and all. Six pages, six shortcodes, done once. After that a new round or category appears on the site because it appeared in the database.
 
-**The plugin works out what a record is.** The database holds every score submitted, including many that were never records. The plugin sorts each classification by date and keeps the scores that beat everything before them. That derived progression is what the "+" shows. Doing it this way means the site cannot drift out of step with the data.
+**The plugin works out what a record is.** The `Records` table holds scores that were never records — a 1065 shot in 2020 when the standing record was already 1069. The plugin sorts each classification by date and keeps only the scores that beat everything before them. That derived progression is what the "+" shows, and it means the site cannot drift out of step with the data.
 
-**All the history is already in the page.** There is no request when you press "+". Every previous holder is rendered as a hidden table row and the button just unhides it — the same approach the Archery Europe records pages use. That is why it is fast and why it degrades sensibly: with JavaScript off, the history shows expanded rather than being locked behind a dead button.
+It also means the plugin is right where the data is wrong. Ten records have two rows flagged as current and 116 have none; deriving rather than trusting the flag gives the correct answer in every case.
+
+**Everything on the page comes from the database.** Which rounds exist, what they are called, which categories each table lists, and which of those read "no current record" — all of it. There is no grid of expected categories to keep in step, because the database holds a row for a category nobody has claimed.
+
+**All the history is already in the page.** There is no request when you press "+". Every previous holder is rendered as a hidden table row and the button just unhides it — the approach the Archery Europe records pages use. Fast, and it degrades sensibly: with JavaScript off the history shows expanded rather than being locked behind a dead button.
 
 ## Files
 
 ```
 archery-records.php        Plugin header, shortcode, asset registration
-DATA-CONTRACT.md           What the data source must return. Read this first.
-INSTALL.md                 Installing, and switching the seven pages over
+DATA-CONTRACT.md           What a data source must return
+INSTALL.md                 Installing, connecting the database, switching the pages over
 includes/
-  data-source.php          >>> THE FILE TO REPLACE <<< currently returns sample data
-  normalise.php            Validates and tidies whatever the source returns
+  data-source.php          >>> THE FILE TO REPLACE <<< currently reads the bundled snapshot
+  normalise.php            Validation, tidying, and the encoding repair
   cache.php                Cached read-through, with a fallback to the last good copy
-  layout.php               Loads config/layout.json
-  records.php              Works out the record progression from the raw scores
+  rounds.php               Page list, round list, and display order
+  records.php              Derives the record progression from the raw scores
   render.php               Builds the HTML
 assets/
   archery-records.css      Table styling. No icon fonts, no external anything.
-  archery-records.js       The "+" toggle. ~40 lines, no jQuery.
+  archery-records.js       The "+" toggle. About 40 lines, no jQuery.
 config/
-  layout.json              Which rounds are on which page, and the expected rows
+  rounds.json              Round key -> page, heading, archived, order. Generated.
 data/
-  fixtures.json            Sample data. Delete once the real source is connected.
+  fixtures.json            Snapshot of the real database, 7 September 2026
 examples/
-  data-source-mysql.php    Worked example: MySQL, same server
-  data-source-csv.php      Worked example: CSV or Excel export on disk
-  data-source-rest.php     Worked example: JSON web service
+  data-source-archery-ireland.php   The live implementation. This is the one to use.
+  data-source-csv.php               If the data ever moves to a file
+  data-source-rest.php              If the data ever moves behind a web service
 ```
 
-## Why there is a config file
+## Where the data lives
 
-`config/layout.json` lists the rows each table is expected to have. It exists for one reason: the records database only holds scores that were actually shot, so it has no way of saying "Gents Barebow is a category on this round but nobody has ever set a record in it". The current site shows those as "no current record", and the config file is what lets the plugin keep doing that.
+Not in the WordPress database. WordPress is on `mysql4543int.cp.blacknight.com`; the records are in `db1249072_registration` on `mysql1996int.cp.blacknight.com`, a different server on the same hosting account. That is why the plugin opens its own connection rather than using `$wpdb`.
 
-It was generated from the existing pages by `tools/extract_fixtures.py` in the parent project. Editing it by hand is fine.
+## Assumptions, and how to change them
 
-If a record turns up in the database for a classification the config does not list, it is rendered anyway, at the bottom of its table. The config controls the empty rows; it does not gate real data.
-
-## Dependencies
-
-None. No jQuery, no icon font, no table plugin, no external requests. The "+" icon is drawn in CSS.
-
-## Assumptions to revisit
-
-These are guesses about a database nobody has seen yet. Each is in one place and cheap to change.
-
-- **Equalling a record does not take it.** Filter `archery_records_ties_take_record` to reverse.
-- **Two-digit years are this century unless that would be in the future.** So `15` is 2015 and `95` is 1995. Delete this guesswork if the real source stores proper dates — see `archery_records_date_sort_key()`.
-- **A record is identified by round, classification and bow**, not by the database's own row id, which is random and identifies a single score rather than a record.
+- **Equalling a record does not take it** — the first archer to a score keeps it. Filter `archery_records_ties_take_record` to reverse.
+- **A record is identified by round, classification and bow**, not by the database's row id, which identifies a single score.
 - **Fifteen-minute cache.** Filter `archery_records_cache_seconds`.
+- **Class and bow display order** are in `includes/rounds.php`, with filters on each.
+- **Age-group labels** (`M` to "50+ Men", `J` to "U21 Gents", and so on) are in the data source, in one array.

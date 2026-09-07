@@ -2,11 +2,14 @@
 /**
  * Builds the HTML for a records page.
  *
- * The markup follows the same idea as the Archery Europe records pages: every
- * row, current holder and previous holders alike, is rendered into the table,
- * and the previous ones start out hidden. The "+" simply unhides them. There is
- * no second request and no client-side data, so the page works the same whether
- * or not the JavaScript loads.
+ * Every row of every table comes from the records database, including the empty ones
+ * that read "no current record" - the database holds a row for a category nobody has
+ * claimed, so there is no separate list of expected categories to keep in step.
+ *
+ * The markup follows the same idea as the Archery Europe records pages: current holder
+ * and previous holders alike are rendered into the table, and the previous ones start
+ * out hidden. The "+" simply unhides them. There is no second request and no
+ * client-side data.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,19 +19,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Render one records page.
  *
- * @param string $page_key Page key from config/layout.json.
+ * @param string $page_key Page key.
  * @param array  $options  heading_level, show_archived, show_history.
  * @return string HTML.
  */
 function archery_records_render_page( $page_key, $options ) {
-	$layout = archery_records_get_layout();
-	$page   = $layout['pages'][ $page_key ];
-	$data   = archery_records_get_data();
-
+	$data         = archery_records_get_data();
 	$progressions = archery_records_build_progressions( $data['submissions'] );
-	$used_keys    = array();
+	$vacancies    = archery_records_collect_vacancies( $data['submissions'] );
+	$rounds       = archery_records_rounds_for_page( $page_key );
 
-	$html  = '<div class="archery-records-page" data-page="' . esc_attr( $page_key ) . '">';
+	$html = '<div class="archery-records-page" data-page="' . esc_attr( $page_key ) . '">';
 
 	// With JavaScript off, the "+" cannot do anything, so show the full history
 	// rather than hiding it behind a button that will never work.
@@ -39,33 +40,46 @@ function archery_records_render_page( $page_key, $options ) {
 
 	$html .= archery_records_status_notice( $data );
 
-	$rounds_rendered = 0;
-	$section_shown   = '';
+	$rendered      = 0;
+	$archived_seen = false;
 
-	foreach ( (array) $page['rounds'] as $round_key ) {
-		if ( ! isset( $layout['rounds'][ $round_key ] ) ) {
+	foreach ( $rounds as $round_key => $round ) {
+		$archived = ! empty( $round['archived'] );
+
+		if ( $archived && empty( $options['show_archived'] ) ) {
 			continue;
 		}
 
-		$round = $layout['rounds'][ $round_key ];
+		$table = archery_records_render_round( $round_key, $round, $progressions, $vacancies, $options );
 
-		if ( ! empty( $round['archived'] ) && empty( $options['show_archived'] ) ) {
+		if ( '' === $table ) {
 			continue;
 		}
 
-		// The heading that introduces a block of retired rounds, shown once, and
-		// only where it actually separates one part of the page from another.
-		$section = isset( $round['section'] ) ? (string) $round['section'] : '';
-		if ( '' !== $section && $section !== $section_shown && $rounds_rendered > 0 ) {
-			$html         .= archery_records_heading( $section, $options['heading_level'], 'archery-records-section' );
-			$section_shown = $section;
+		// A single heading introduces the retired rounds at the foot of the page.
+		if ( $archived && ! $archived_seen && $rendered > 0 ) {
+			$html         .= archery_records_heading(
+				__( 'Archived records - no longer shot for', 'archery-records' ),
+				$options['heading_level'],
+				'archery-records-section'
+			);
+			$archived_seen = true;
 		}
 
-		$html .= archery_records_render_round( $round_key, $round, $progressions, $options, $used_keys );
-		$rounds_rendered++;
+		$html .= $table;
+		$rendered++;
 	}
 
-	$html .= archery_records_unmapped_notice( $progressions, $used_keys, $layout );
+	if ( 0 === $rendered ) {
+		$html .= archery_records_admin_only_notice(
+			sprintf(
+				/* translators: %s: the page key */
+				__( 'No rounds were found for the page "%s".', 'archery-records' ),
+				$page_key
+			)
+		);
+	}
+
 	$html .= archery_records_problems_notice( $data );
 	$html .= '</div>';
 
@@ -73,81 +87,86 @@ function archery_records_render_page( $page_key, $options ) {
 }
 
 /**
+ * Collect the categories that exist but hold no record.
+ *
+ * @param array $submissions Normalised submissions.
+ * @return array Record key => the vacant row.
+ */
+function archery_records_collect_vacancies( $submissions ) {
+	$vacancies = array();
+
+	foreach ( $submissions as $submission ) {
+		if ( ! empty( $submission['vacant'] ) ) {
+			$vacancies[ archery_records_record_key( $submission ) ] = $submission;
+		}
+	}
+
+	return $vacancies;
+}
+
+/**
  * Render the heading and table for a single round.
  *
  * @param string $round_key    Round key.
  * @param array  $round        Round definition.
- * @param array  $progressions All record progressions, keyed by record key.
+ * @param array  $progressions Record progressions, keyed by record key.
+ * @param array  $vacancies    Vacant categories, keyed by record key.
  * @param array  $options      Render options.
- * @param array  $used_keys    Accumulator of record keys that have been rendered.
- * @return string HTML.
+ * @return string HTML, or an empty string if the round has no rows at all.
  */
-function archery_records_render_round( $round_key, $round, $progressions, $options, &$used_keys ) {
-	$show_history        = ! empty( $options['show_history'] );
-	$columns             = archery_records_columns( $round, $show_history );
-	$classification_keys = isset( $round['classification_keys'] ) ? (array) $round['classification_keys'] : array();
-	$heading_id          = 'ar-' . substr( md5( $round_key ), 0, 10 );
+function archery_records_render_round( $round_key, $round, $progressions, $vacancies, $options ) {
+	$rows = archery_records_rows_for_round( $round_key, $progressions, $vacancies );
+
+	if ( empty( $rows ) ) {
+		return '';
+	}
+
+	$has_peg     = false;
+	$archers     = 1;
+	$has_history = false;
+
+	foreach ( $rows as $row ) {
+		if ( ! empty( $row['classification']['peg'] ) ) {
+			$has_peg = true;
+		}
+		foreach ( $row['progression'] as $entry ) {
+			$archers = max( $archers, count( $entry['archers'] ) );
+		}
+		if ( count( $row['progression'] ) > 1 ) {
+			$has_history = true;
+		}
+	}
+
+	// Only give the table a toggle column if something on it can actually expand.
+	$show_history = ! empty( $options['show_history'] ) && $has_history;
+
+	$columns    = archery_records_columns_for( $has_peg, $archers, $show_history );
+	$heading_id = 'ar-' . substr( md5( $round_key ), 0, 10 );
 
 	$html  = archery_records_heading( $round['heading'], $options['heading_level'], 'archery-records-heading', $heading_id );
 	$html .= '<div class="archery-records-scroller">';
 	$html .= '<table class="archery-records-table" aria-labelledby="' . esc_attr( $heading_id ) . '">';
 
 	$html .= '<thead><tr>';
-	foreach ( $columns as $label ) {
-		if ( '' === $label ) {
+	foreach ( $columns as $column ) {
+		if ( 'toggle' === $column ) {
 			$html .= '<th scope="col" class="archery-records-toggle-col"><span class="archery-records-sr">' .
 				esc_html__( 'Previous holders', 'archery-records' ) . '</span></th>';
 		} else {
-			$html .= '<th scope="col">' . esc_html( $label ) . '</th>';
+			$html .= '<th scope="col">' . esc_html( archery_records_column_label( $column ) ) . '</th>';
 		}
 	}
 	$html .= '</tr></thead><tbody>';
 
-	$previous_row = null;
-	$row_index    = 0;
+	$previous = null;
+	$index    = 0;
 
-	foreach ( (array) $round['grid'] as $grid_row ) {
-		$classification = array();
-		foreach ( $classification_keys as $key ) {
-			$classification[ $key ] = isset( $grid_row[ $key ] ) ? $grid_row[ $key ] : '';
-		}
-		$bow = isset( $grid_row['bow'] ) ? $grid_row['bow'] : '';
+	foreach ( $rows as $row ) {
+		$html .= archery_records_render_record( $row, $columns, $show_history, $previous, $index );
 
-		$key = archery_records_key_from_parts( $round_key, $classification, $bow );
-		if ( isset( $used_keys[ $key ] ) ) {
-			continue;
-		}
-		$used_keys[ $key ] = true;
-
-		$progression = isset( $progressions[ $key ] ) ? $progressions[ $key ] : array();
-
-		$this_row        = $classification;
-		$this_row['bow'] = $bow;
-
-		$html .= archery_records_render_record( $key, $round, $columns, $classification, $bow, $progression, $show_history, $previous_row, $row_index );
-
-		$previous_row = $this_row;
-		$row_index++;
-	}
-
-	// Anything in the data for this round that the layout file does not list -
-	// a class or bow that has been added since the configuration was written.
-	// These appear automatically rather than needing a config edit first.
-	$prefix = $round_key . '|';
-	foreach ( $progressions as $key => $progression ) {
-		if ( isset( $used_keys[ $key ] ) || 0 !== strpos( $key, $prefix ) ) {
-			continue;
-		}
-		$used_keys[ $key ] = true;
-
-		$current        = $progression[0];
-		$classification = array();
-		foreach ( $classification_keys as $ckey ) {
-			$classification[ $ckey ] = isset( $current['classification'][ $ckey ] ) ? $current['classification'][ $ckey ] : '';
-		}
-
-		$html .= archery_records_render_record( $key, $round, $columns, $classification, $current['bow'], $progression, $show_history, null, $row_index );
-		$row_index++;
+		$previous        = $row['classification'];
+		$previous['bow'] = $row['bow'];
+		$index++;
 	}
 
 	$html .= '</tbody></table></div>';
@@ -156,28 +175,165 @@ function archery_records_render_round( $round_key, $round, $progressions, $optio
 }
 
 /**
- * Render the current-holder row for one record, plus its hidden history rows.
+ * Gather every category belonging to one round, in display order.
  *
- * @param string     $key            Record key.
- * @param array      $round          Round definition.
- * @param array      $columns        Column labels including the toggle column.
- * @param array      $classification Classification field => value.
- * @param string     $bow            Bow type.
- * @param array      $progression    Record-setting submissions, current first.
- * @param bool       $show_history   Whether to render the history at all.
- * @param array|null $previous       Leading values of the row above, for dimming repeated ones.
- * @param int        $row_index      Position of this record in its table, for striping.
+ * @param string $round_key    Round key.
+ * @param array  $progressions Record progressions.
+ * @param array  $vacancies    Vacant categories.
+ * @return array List of rows, each with classification, bow, progression and key.
+ */
+function archery_records_rows_for_round( $round_key, $progressions, $vacancies ) {
+	$prefix = $round_key . '|';
+	$rows   = array();
+
+	foreach ( $progressions as $key => $progression ) {
+		if ( 0 !== strpos( $key, $prefix ) ) {
+			continue;
+		}
+		$current      = $progression[0];
+		$rows[ $key ] = array(
+			'classification' => $current['classification'],
+			'bow'            => $current['bow'],
+			'progression'    => $progression,
+			'key'            => $key,
+		);
+	}
+
+	// Categories with no record at all. A category that has since been claimed is
+	// already present above, so this never displaces a real record.
+	foreach ( $vacancies as $key => $vacant ) {
+		if ( 0 !== strpos( $key, $prefix ) || isset( $rows[ $key ] ) ) {
+			continue;
+		}
+		$rows[ $key ] = array(
+			'classification' => $vacant['classification'],
+			'bow'            => $vacant['bow'],
+			'progression'    => array(),
+			'key'            => $key,
+		);
+	}
+
+	uasort( $rows, 'archery_records_compare_rows' );
+
+	return $rows;
+}
+
+/**
+ * Order rows the way the pages read: by peg, then class, then bow.
+ *
+ * @param array $a Row.
+ * @param array $b Row.
+ * @return int
+ */
+function archery_records_compare_rows( $a, $b ) {
+	$peg_a = isset( $a['classification']['peg'] ) ? $a['classification']['peg'] : '';
+	$peg_b = isset( $b['classification']['peg'] ) ? $b['classification']['peg'] : '';
+
+	$rank_a = archery_records_peg_rank( $peg_a );
+	$rank_b = archery_records_peg_rank( $peg_b );
+	if ( $rank_a !== $rank_b ) {
+		return $rank_a - $rank_b;
+	}
+
+	$class_a = isset( $a['classification']['class'] ) ? $a['classification']['class'] : '';
+	$class_b = isset( $b['classification']['class'] ) ? $b['classification']['class'] : '';
+
+	$rank_a = archery_records_class_rank( $class_a );
+	$rank_b = archery_records_class_rank( $class_b );
+	if ( $rank_a !== $rank_b ) {
+		return $rank_a - $rank_b;
+	}
+	if ( $class_a !== $class_b ) {
+		return strcmp( $class_a, $class_b );
+	}
+
+	$rank_a = archery_records_bow_rank( $a['bow'] );
+	$rank_b = archery_records_bow_rank( $b['bow'] );
+	if ( $rank_a !== $rank_b ) {
+		return $rank_a - $rank_b;
+	}
+
+	return strcmp( $a['bow'], $b['bow'] );
+}
+
+/**
+ * The columns a table of this shape needs.
+ *
+ * @param bool $has_peg      Whether the round uses pegs.
+ * @param int  $archers      How many archer columns are needed.
+ * @param bool $show_history Whether to add the toggle column.
+ * @return array List of column keys; 'archer' may appear more than once.
+ */
+function archery_records_columns_for( $has_peg, $archers, $show_history ) {
+	$columns = array();
+
+	if ( $has_peg ) {
+		$columns[] = 'peg';
+	}
+	$columns[] = 'class';
+	$columns[] = 'bow';
+	$columns[] = 'score';
+
+	for ( $i = 0; $i < max( 1, (int) $archers ); $i++ ) {
+		$columns[] = 'archer';
+	}
+
+	$columns[] = 'date';
+	$columns[] = 'club';
+
+	if ( $show_history ) {
+		$columns[] = 'toggle';
+	}
+
+	return $columns;
+}
+
+/**
+ * The visible header for a column.
+ *
+ * @param string $column Column key.
+ * @return string
+ */
+function archery_records_column_label( $column ) {
+	switch ( $column ) {
+		case 'peg':
+			return __( 'Peg', 'archery-records' );
+		case 'class':
+			return __( 'Class', 'archery-records' );
+		case 'bow':
+			return __( 'Bow', 'archery-records' );
+		case 'score':
+			return __( 'Score', 'archery-records' );
+		case 'archer':
+			return __( 'Archer', 'archery-records' );
+		case 'date':
+			return __( 'Date', 'archery-records' );
+		case 'club':
+			return __( 'Club', 'archery-records' );
+	}
+
+	return '';
+}
+
+/**
+ * Render one record: the current holder, then its hidden history rows.
+ *
+ * @param array      $row          Row definition.
+ * @param array      $columns      Column keys.
+ * @param bool       $show_history Whether history is being shown on this table.
+ * @param array|null $previous     Classification of the row above, for dimming repeats.
+ * @param int        $index        Position in the table, for striping.
  * @return string HTML.
  */
-function archery_records_render_record( $key, $round, $columns, $classification, $bow, $progression, $show_history, $previous, $row_index = 0 ) {
-	$row_id  = 'ar-' . substr( md5( $key ), 0, 12 );
-	$history = $show_history ? array_slice( $progression, 1 ) : array();
+function archery_records_render_record( $row, $columns, $show_history, $previous, $index ) {
+	$stripe = ( 1 === $index % 2 ) ? ' archery-records-row--alt' : '';
 
-	$stripe = ( 1 === $row_index % 2 ) ? ' archery-records-row--alt' : '';
-
-	if ( empty( $progression ) ) {
-		return archery_records_render_vacant_row( $round, $columns, $classification, $bow, $previous, $stripe );
+	if ( empty( $row['progression'] ) ) {
+		return archery_records_render_vacant_row( $row, $columns, $previous, $stripe );
 	}
+
+	$row_id  = 'ar-' . substr( md5( $row['key'] ), 0, 12 );
+	$history = $show_history ? array_slice( $row['progression'], 1 ) : array();
 
 	$history_ids = array();
 	for ( $i = 1; $i <= count( $history ); $i++ ) {
@@ -185,9 +341,9 @@ function archery_records_render_record( $key, $round, $columns, $classification,
 	}
 
 	$html  = '<tr class="archery-records-row' . $stripe . '">';
-	$html .= archery_records_cells( $round, $columns, $classification, $bow, $progression[0], $previous, false );
+	$html .= archery_records_cells( $row, $columns, $row['progression'][0], $previous, false );
 
-	if ( in_array( '', $columns, true ) ) {
+	if ( in_array( 'toggle', $columns, true ) ) {
 		$html .= '<td class="archery-records-toggle-col">';
 		if ( ! empty( $history ) ) {
 			$html .= '<button type="button" class="archery-records-toggle" aria-expanded="false" aria-controls="' .
@@ -210,8 +366,8 @@ function archery_records_render_record( $key, $round, $columns, $classification,
 
 	foreach ( $history as $i => $entry ) {
 		$html .= '<tr class="archery-records-history" id="' . esc_attr( $history_ids[ $i ] ) . '" hidden>';
-		$html .= archery_records_cells( $round, $columns, $classification, $bow, $entry, null, true );
-		if ( in_array( '', $columns, true ) ) {
+		$html .= archery_records_cells( $row, $columns, $entry, null, true );
+		if ( in_array( 'toggle', $columns, true ) ) {
 			$html .= '<td class="archery-records-toggle-col"></td>';
 		}
 		$html .= '</tr>';
@@ -221,56 +377,62 @@ function archery_records_render_record( $key, $round, $columns, $classification,
 }
 
 /**
- * Render the data cells of one row, in the column order the round defines.
+ * Render the data cells of one row, in column order.
  *
- * @param array      $round          Round definition.
- * @param array      $columns        Column labels.
- * @param array      $classification Classification field => value.
- * @param string     $bow            Bow type.
- * @param array      $entry          The submission being shown.
- * @param array|null $previous       Leading values of the row above, or null.
- * @param bool       $is_history     Whether this is a previous holder.
+ * @param array      $row        Row definition.
+ * @param array      $columns    Column keys.
+ * @param array      $entry      The submission being shown.
+ * @param array|null $previous   Classification of the row above, or null.
+ * @param bool       $is_history Whether this is a previous holder.
  * @return string HTML.
  */
-function archery_records_cells( $round, $columns, $classification, $bow, $entry, $previous, $is_history ) {
-	$classification_keys = isset( $round['classification_keys'] ) ? (array) $round['classification_keys'] : array();
-	$archer_index        = 0;
-	$html                = '';
+function archery_records_cells( $row, $columns, $entry, $previous, $is_history ) {
+	$archer_index = 0;
+	$html         = '';
 
-	foreach ( $columns as $label ) {
-		$field = strtolower( $label );
-
-		if ( '' === $label ) {
-			continue; // The toggle column is added by the caller.
+	foreach ( $columns as $column ) {
+		if ( 'toggle' === $column ) {
+			continue; // Added by the caller.
 		}
 
 		$classes = array();
 		$value   = '';
 
-		if ( in_array( $field, $classification_keys, true ) ) {
-			$value = isset( $classification[ $field ] ) ? $classification[ $field ] : '';
-			// Dim only a value that is genuinely the same as the row above, which is
-			// what the hand-built tables conveyed by leaving the cell blank.
-			if ( $is_history || ( is_array( $previous ) && isset( $previous[ $field ] ) && $previous[ $field ] === $value ) ) {
-				$classes[] = 'archery-records-repeat';
-			}
-		} elseif ( 'bow' === $field ) {
-			$value = $bow;
-			if ( $is_history ) {
-				$classes[] = 'archery-records-repeat';
-			}
-		} elseif ( 'score' === $field ) {
-			$value     = (string) $entry['score'];
-			$classes[] = 'archery-records-score';
-		} elseif ( 'archer' === $field ) {
-			$value = isset( $entry['archers'][ $archer_index ] ) ? $entry['archers'][ $archer_index ] : '';
-			$archer_index++;
-		} elseif ( 'date' === $field ) {
-			$value = $entry['date'];
-		} elseif ( 'club' === $field ) {
-			$value = $entry['club'];
-		} elseif ( 'venue' === $field || 'place' === $field ) {
-			$value = $entry['venue'];
+		switch ( $column ) {
+			case 'peg':
+			case 'class':
+				$value = isset( $row['classification'][ $column ] ) ? $row['classification'][ $column ] : '';
+				// Dim a value only where it genuinely repeats the row above, which is what
+				// the hand-built tables conveyed by leaving the cell blank.
+				if ( $is_history || ( is_array( $previous ) && isset( $previous[ $column ] ) && $previous[ $column ] === $value ) ) {
+					$classes[] = 'archery-records-repeat';
+				}
+				break;
+
+			case 'bow':
+				$value = $row['bow'];
+				if ( $is_history ) {
+					$classes[] = 'archery-records-repeat';
+				}
+				break;
+
+			case 'score':
+				$value     = (string) $entry['score'];
+				$classes[] = 'archery-records-score';
+				break;
+
+			case 'archer':
+				$value = isset( $entry['archers'][ $archer_index ] ) ? $entry['archers'][ $archer_index ] : '';
+				$archer_index++;
+				break;
+
+			case 'date':
+				$value = archery_records_format_date( $entry['date'] );
+				break;
+
+			case 'club':
+				$value = $entry['club'];
+				break;
 		}
 
 		$class_attr = $classes ? ' class="' . esc_attr( implode( ' ', $classes ) ) . '"' : '';
@@ -281,41 +443,41 @@ function archery_records_cells( $round, $columns, $classification, $bow, $entry,
 }
 
 /**
- * Render a row for a classification that nobody holds a record in.
+ * Render a row for a category that nobody holds a record in.
  *
- * @param array      $round          Round definition.
- * @param array      $columns        Column labels.
- * @param array      $classification Classification field => value.
- * @param string     $bow            Bow type.
- * @param array|null $previous       Leading values of the row above, or null.
- * @param string     $stripe         Extra class for alternate-row shading.
+ * @param array      $row      Row definition.
+ * @param array      $columns  Column keys.
+ * @param array|null $previous Classification of the row above.
+ * @param string     $stripe   Extra class for alternate-row shading.
  * @return string HTML.
  */
-function archery_records_render_vacant_row( $round, $columns, $classification, $bow, $previous, $stripe = '' ) {
-	$classification_keys = isset( $round['classification_keys'] ) ? (array) $round['classification_keys'] : array();
-
+function archery_records_render_vacant_row( $row, $columns, $previous, $stripe ) {
 	$leading = 0;
-	foreach ( $columns as $label ) {
-		$field = strtolower( $label );
-		if ( in_array( $field, $classification_keys, true ) || 'bow' === $field ) {
+	foreach ( $columns as $column ) {
+		if ( in_array( $column, array( 'peg', 'class', 'bow' ), true ) ) {
 			$leading++;
 		} else {
 			break;
 		}
 	}
 
-	$html = '<tr class="archery-records-row archery-records-vacant' . $stripe . '">';
-
+	$html  = '<tr class="archery-records-row archery-records-vacant' . $stripe . '">';
 	$index = 0;
-	foreach ( $columns as $label ) {
+
+	foreach ( $columns as $column ) {
 		if ( $index >= $leading ) {
 			break;
 		}
-		$field   = strtolower( $label );
-		$value   = ( 'bow' === $field ) ? $bow : ( isset( $classification[ $field ] ) ? $classification[ $field ] : '' );
-		$repeats = ( 'bow' !== $field ) && is_array( $previous ) && isset( $previous[ $field ] ) && $previous[ $field ] === $value;
-		$classes = $repeats ? ' class="archery-records-repeat"' : '';
-		$html   .= '<td' . $classes . '>' . esc_html( $value ) . '</td>';
+
+		if ( 'bow' === $column ) {
+			$value   = $row['bow'];
+			$repeats = false;
+		} else {
+			$value   = isset( $row['classification'][ $column ] ) ? $row['classification'][ $column ] : '';
+			$repeats = is_array( $previous ) && isset( $previous[ $column ] ) && $previous[ $column ] === $value;
+		}
+
+		$html .= '<td' . ( $repeats ? ' class="archery-records-repeat"' : '' ) . '>' . esc_html( $value ) . '</td>';
 		$index++;
 	}
 
@@ -328,6 +490,32 @@ function archery_records_render_vacant_row( $round, $columns, $classification, $
 }
 
 /**
+ * Present a date the way the records pages have always shown them.
+ *
+ * The database stores proper dates, so this is presentation only. Anything we cannot
+ * read is passed through untouched rather than blanked.
+ *
+ * @param string $date Date as the data source gave it.
+ * @return string
+ */
+function archery_records_format_date( $date ) {
+	$date = trim( (string) $date );
+
+	if ( '' === $date ) {
+		return '';
+	}
+
+	if ( preg_match( '/^(\d{4})-(\d{2})-(\d{2})$/', $date, $m ) ) {
+		$timestamp = gmmktime( 0, 0, 0, (int) $m[2], (int) $m[3], (int) $m[1] );
+		if ( $timestamp ) {
+			return gmdate( 'd-M-y', $timestamp );
+		}
+	}
+
+	return $date;
+}
+
+/**
  * A heading element at the configured level.
  *
  * @param string $text  Heading text.
@@ -337,8 +525,8 @@ function archery_records_render_vacant_row( $round, $columns, $classification, $
  * @return string HTML.
  */
 function archery_records_heading( $text, $level, $class, $id = '' ) {
-	$tag      = 'h' . (int) $level;
-	$id_attr  = ( '' !== $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
+	$tag     = 'h' . (int) $level;
+	$id_attr = ( '' !== $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
 
 	return '<' . $tag . ' class="' . esc_attr( $class ) . '"' . $id_attr . '>' . esc_html( $text ) . '</' . $tag . '>';
 }
@@ -363,43 +551,6 @@ function archery_records_status_notice( $data ) {
 	}
 
 	return '';
-}
-
-/**
- * Warn an editor about records whose round is not in the layout configuration.
- *
- * These would otherwise vanish silently, which is the failure mode most likely
- * to go unnoticed: a new round is added to the database and simply never appears.
- *
- * @param array $progressions All progressions.
- * @param array $used_keys    Keys already rendered anywhere on this page.
- * @param array $layout       Layout configuration.
- * @return string HTML.
- */
-function archery_records_unmapped_notice( $progressions, $used_keys, $layout ) {
-	$unmapped = array();
-
-	foreach ( $progressions as $key => $progression ) {
-		if ( isset( $used_keys[ $key ] ) ) {
-			continue;
-		}
-		$round = $progression[0]['round'];
-		if ( ! isset( $layout['rounds'][ $round ] ) ) {
-			$unmapped[ $round ] = true;
-		}
-	}
-
-	if ( empty( $unmapped ) ) {
-		return '';
-	}
-
-	return archery_records_admin_only_notice(
-		sprintf(
-			/* translators: %s: comma-separated list of round keys */
-			__( 'The records database contains rounds that config/layout.json does not know about, so they are not shown on any page: %s', 'archery-records' ),
-			implode( ', ', array_keys( $unmapped ) )
-		)
-	);
 }
 
 /**

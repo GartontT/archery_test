@@ -1,55 +1,77 @@
-# Installing and switching the pages over
+# Installing, connecting, and switching the pages over
 
-Written for whoever administers archery.ie. It assumes you can get into the WordPress dashboard and edit pages in Elementor. Nothing here needs a developer.
+Written for whoever administers archery.ie. It assumes you can get into the WordPress dashboard, edit pages in Elementor, and put four lines into `wp-config.php`. Nothing here needs a developer.
 
-Do the whole thing on a staging copy of the site first if there is one. If there isn't, do one page and look at it before doing the rest.
+Three stages, in this order. Each is safe to stop after.
 
-## 1. Install the plugin
+---
+
+## Stage 1 — install the plugin
 
 1. Zip the `archery-records` folder so you have `archery-records.zip`.
-2. In WordPress, go to **Plugins → Add New → Upload Plugin**.
-3. Choose the zip, click **Install Now**, then **Activate**.
+2. In WordPress: **Plugins → Add New → Upload Plugin**, choose the zip, **Install Now**, then **Activate**.
 
-Nothing changes on the site yet. The plugin does nothing until a page uses its shortcode.
+Nothing changes on the site. The plugin does nothing until a page uses its shortcode.
 
-At this point the plugin is running on **sample data** bundled with it. The current record holders are real (they were copied from the live site), but every previous holder behind a "+" is invented placeholder data with names like "A. Sample". That is deliberate, so the tables can be looked at before the real database is connected.
+At this point it is running on a **snapshot** of the records database taken on 7 September 2026. The data is real, but it is frozen — new records will not appear until Stage 2.
 
-## 2. Check it works, on one page, before touching the real ones
+### Check it works before touching anything real
 
-1. Create a new page, call it something like "Records test", and leave it as a draft.
-2. Edit it and add a **Shortcode** widget (in Elementor, search the widget panel for "Shortcode").
-3. Put this in it:
+1. Create a new page called something like "Records test" and leave it as a draft.
+2. Edit it in Elementor, add a **Shortcode** widget, and put this in it:
 
    ```
    [archery_records page="target-indoor-individual"]
    ```
 
-4. Preview the page. You should get every Target Indoor Individual table, with a "+" at the end of each row that has history.
+3. Preview. You should get eight tables, with a "+" at the end of rows that have previous holders.
 
-If you see nothing at all, the shortcode name is wrong. If you see a message in an orange box, read it — those messages only appear for logged-in editors, never for visitors.
+If you see nothing, the shortcode name is wrong. If you see an orange box, read it — those messages appear only for logged-in editors, never for visitors.
 
-## 3. Switch a real page over
+---
 
-Take **Target Indoor Individual** first, because it is a middling size.
+## Stage 2 — connect the live database
+
+The records are **not** in the WordPress database. They are in `db1249072_registration` on `mysql1996int.cp.blacknight.com`, while WordPress is on `mysql4543int`. Different server, same hosting account, so the plugin needs its own connection.
+
+**First, make a read-only user.** In Plesk → **Databases**, add a user against `db1249072_registration` with **SELECT** permission and nothing else. Do not reuse `u1249072_admin` — that account can drop tables, and this plugin only ever reads.
+
+**Then add four lines to `wp-config.php`**, above the line that says `/* That's all, stop editing! */`:
+
+```php
+define( 'ARCHERY_RECORDS_DB_HOST', 'mysql1996int.cp.blacknight.com' );
+define( 'ARCHERY_RECORDS_DB_NAME', 'db1249072_registration' );
+define( 'ARCHERY_RECORDS_DB_USER', 'the read-only user you just made' );
+define( 'ARCHERY_RECORDS_DB_PASS', 'its password' );
+```
+
+**Then swap one file.** In the plugin folder, copy `examples/data-source-archery-ireland.php` over `includes/data-source.php`, replacing it.
+
+**Then check.** Reload your test page while logged in. If the tables still appear, it is reading live. If you get an orange box saying the database could not be read, the connection failed — the reason is in the site's error log, and the likeliest causes are a typo in the four constants or the read-only user not having been granted access to that database.
+
+You can also delete `data/fixtures.json` once this works. It is only the offline snapshot.
+
+---
+
+## Stage 3 — switch the real pages over
+
+Take **Target Indoor Individual** first; it is a middling size.
 
 1. Edit the page in Elementor.
-2. Find the first round heading ("WA 18 – 120 arrows") and the table under it.
-3. Delete the heading widget and the text-editor widget holding the table. Then do the same for every other heading-and-table pair on the page. Yes, all of them — the shortcode renders the headings too.
-4. In the space where they were, add one **Shortcode** widget containing:
+2. Delete every round heading and every table on it. The shortcode renders the headings too, so they all go — the whole run of heading-and-table pairs.
+3. In the space where they were, add one **Shortcode** widget:
 
    ```
    [archery_records page="target-indoor-individual"]
    ```
 
-5. **Update**, then look at the live page.
+4. **Update**, then look at the live page.
 
-Keep anything else on the page — the intro text, the sponsor blocks, the page title. Only the round headings and their tables go.
+Keep everything else — the intro text, the sponsor blocks, the page title. Only the round headings and their tables go.
 
-If it goes wrong, Elementor keeps revision history: **the history panel at the bottom left → Revisions**, and pick the version from before you started.
+If it goes wrong, Elementor keeps history: the panel at the bottom left → **Revisions** → pick the version from before you started.
 
-## 4. Do the other six
-
-Same again, one shortcode per page:
+### Then the other five
 
 | Page | Shortcode |
 |---|---|
@@ -59,36 +81,37 @@ Same again, one shortcode per page:
 | Target Outdoor Team | `[archery_records page="target-outdoor-team"]` |
 | Field | `[archery_records page="records-field"]` |
 | 3D Field | `[archery_records page="3d-field"]` |
-| Archived Records | `[archery_records page="archived-results"]` |
 
-Target Outdoor Individual has forty tables on it, so that one takes a while. The rest are quick.
+Target Outdoor Individual has thirty-five tables, so that one takes a while. The rest are quick.
 
-That is the last time anybody has to do this. From then on, a new round or a new category appears on the site because it appeared in the database.
+That is the last time anybody edits a records page.
 
-## 5. Options you probably will not need
+### Leave the Archived Records page alone
 
-The shortcode takes three extra settings:
+The seventh page, **Archived Records**, is deliberately not covered. It holds pre-2010 junior records and pre-six-class field records — categories that no longer exist in the current scheme, and which are not separable in the database as a page of their own. Retired *rounds* now appear at the foot of their own page under "Archived records — no longer shot for", which covers most of what that page was for.
+
+Decide separately whether to keep it as it is, or retire it once the new pages are live. Nothing breaks either way.
+
+---
+
+## Options you probably will not need
 
 ```
 [archery_records page="records-field" heading_level="2" archived="no" history="no"]
 ```
 
-- `heading_level` — the heading tag used for round titles, 2 to 6. Default 3, which matches the current pages.
-- `archived="no"` — leaves out the "no longer shot for" tables at the bottom of a page.
-- `history="no"` — no "+" buttons anywhere on that page, current holders only.
-
-## 6. When the real database is connected
-
-Someone with access to the server replaces one file, `includes/data-source.php`, following `DATA-CONTRACT.md`. Nothing on any page changes and no page needs re-editing.
-
-After that switch, load each of the seven pages **while logged in** and look for an orange box at the bottom. That is where the plugin reports rounds it found in the database but does not have a table for. It is the one failure worth checking for by eye.
+- `heading_level` — heading tag for round titles, 2 to 6. Default 3, matching the current pages.
+- `archived="no"` — leaves out the retired rounds at the foot of the page.
+- `history="no"` — no "+" buttons on that page, current holders only.
 
 ## Troubleshooting
 
-**A table shows "no current record" for something that does have a record.** The class or bow name in the database does not exactly match what `config/layout.json` expects — "50+ Men" versus "50 + Men", say. Fix it in the database if you can; otherwise edit `config/layout.json`.
+**A category shows "no current record" but should have one.** The database has a placeholder row for that category and no scoring row, or the scoring row has a different bow or class code. Fix it in the database.
 
-**A whole round is missing.** Look for the orange notice at the bottom of the page when logged in. It lists rounds the database has that the plugin does not recognise.
+**A whole round is missing.** Its `RoundCode` is not in `config/rounds.json`. Four rows in the database currently use codes that are not in the `RoundTypes` table at all (`Team`, `Mixed Team`, `WAF24`); those need tidying at source.
 
-**The tables are showing old data.** The plugin re-reads at most every fifteen minutes. Saving any page clears that immediately.
+**Names with a fada look wrong.** They should not — the plugin repairs the double-encoding in the database. If they still look wrong, the encoding problem has been fixed at the database end and the repair is now doing damage; say so and it can be turned off.
 
-**Everything is showing the previous holders already expanded.** JavaScript is not loading. The plugin deliberately falls back to showing the full history rather than hiding it behind a button that cannot work — so this is the safe failure, but it means something is blocking the plugin's script, usually a caching or minifying plugin.
+**The tables show old data.** The plugin re-reads at most every fifteen minutes. Saving any page clears that immediately.
+
+**Previous holders are all showing, expanded, with no "+".** JavaScript is not loading. The plugin deliberately falls back to showing the history rather than hiding it behind a button that cannot work, so this is the safe failure — but something is blocking the plugin's script, usually a caching or minifying plugin.

@@ -1,0 +1,522 @@
+{
+ "3d-field/3d-24-unmarked-targets": {
+  "page": "3d-field",
+  "code": "3d - 24 unmarked targets",
+  "heading": "3D - 24 unmarked targets",
+  "archived": false,
+  "known_round": true,
+  "order": 1005
+ },
+ "3d-field/3d-24-unmarked-targets-archived": {
+  "page": "3d-field",
+  "code": "3d - 24 unmarked targets",
+  "heading": "3D - 24 unmarked targets",
+  "archived": true,
+  "known_round": true,
+  "order": 1005
+ },
+ "3d-field/3d-48-unmarked-targets": {
+  "page": "3d-field",
+  "code": "3d - 48 unmarked targets",
+  "heading": "3D - 48 unmarked targets",
+  "archived": false,
+  "known_round": true,
+  "order": 1000
+ },
+ "3d-field/3d-48-unmarked-targets-archived": {
+  "page": "3d-field",
+  "code": "3d - 48 unmarked targets",
+  "heading": "3D - 48 unmarked targets",
+  "archived": true,
+  "known_round": true,
+  "order": 1000
+ },
+ "records-field/24-target-mixed": {
+  "page": "records-field",
+  "code": "24 Target Mixed",
+  "heading": "24 target mixed",
+  "archived": false,
+  "known_round": true,
+  "order": 1004
+ },
+ "records-field/24-target-mixed-archived": {
+  "page": "records-field",
+  "code": "24 Target Mixed",
+  "heading": "24 target mixed",
+  "archived": true,
+  "known_round": true,
+  "order": 1004
+ },
+ "records-field/24-targets-marked": {
+  "page": "records-field",
+  "code": "24 Targets Marked",
+  "heading": "24 targets marked",
+  "archived": false,
+  "known_round": true,
+  "order": 62
+ },
+ "records-field/24-targets-marked-archived": {
+  "page": "records-field",
+  "code": "24 Targets Marked",
+  "heading": "24 targets marked",
+  "archived": true,
+  "known_round": true,
+  "order": 62
+ },
+ "records-field/24-targets-unmarked": {
+  "page": "records-field",
+  "code": "24 Targets Unmarked",
+  "heading": "24 targets unmarked",
+  "archived": false,
+  "known_round": true,
+  "order": 61
+ },
+ "records-field/24-targets-unmarked-archived": {
+  "page": "records-field",
+  "code": "24 Targets Unmarked",
+  "heading": "24 targets unmarked",
+  "archived": true,
+  "known_round": true,
+  "order": 61
+ },
+ "records-field/48-targets": {
+  "page": "records-field",
+  "code": "48 Targets",
+  "heading": "48 targets",
+  "archived": false,
+  "known_round": true,
+  "order": 60
+ },
+ "records-field/48-targets-archived": {
+  "page": "records-field",
+  "code": "48 Targets",
+  "heading": "48 targets",
+  "archived": true,
+  "known_round": true,
+  "order": 60
+ },
+ "records-field/waf24": {
+  "page": "records-field",
+  "code": "WAF24",
+  "heading": "WAF24",
+  "archived": false,
+  "known_round": false,
+  "order": 1999
+ },
+ "target-indoor-team/team-eliminations": {
+  "page": "target-indoor-team",
+  "code": "Team Eliminations",
+  "heading": "Team Eliminations",
+  "archived": false,
+  "known_round": true,
+  "order": 1025
+ },
+ "target-indoor-team/team-eliminations-ind": {
+  "page": "target-indoor-team",
+  "code": "Team Eliminations Ind",
+  "heading": "Team Eliminations Ind",
+  "archived": false,
+  "known_round": true,
+  "order": 1009
+ },
+ "target-indoor-team/team-qualification": {
+  "page": "target-indoor-team",
+  "code": "Team Qualification",
+  "heading": "Team Qualification",
+  "archived": false,
+  "known_round": true,
+  "order": 1024
+ },
+ "target-indoor-team/team-qualification-ind": {
+  "page": "target-indoor-team",
+  "code": "Team Qualification Ind",
+  "heading": "Team Qualification Ind",
+  "archived": false,
+  "known_round": true,
+  "order": 1006
+ },
+ "target-indoor-individual/wa18-12-arrow-archived": {
+  "page": "target-indoor-individual",
+  "code": "WA18 12 Arrow",
+  "heading": "WA18 (12 Arrow - Archived)",
+  "archived": true,
+  "known_round": true,
+  "order": 1015
+ },
+ "target-indoor-individual/wa18-120-arrow": {
+  "page": "target-indoor-individual",
+  "code": "WA18 120 Arrow",
+  "heading": "WA18 (120 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 0
+ },
+ "target-indoor-individual/wa18-15-arrow": {
+  "page": "target-indoor-individual",
+  "code": "WA18 15 Arrow",
+  "heading": "WA18 (15 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 1017
+ },
+ "target-indoor-individual/wa18-18-arrow-archived": {
+  "page": "target-indoor-individual",
+  "code": "WA18 18 Arrow",
+  "heading": "WA18 (18 Arrow - Archived)",
+  "archived": true,
+  "known_round": true,
+  "order": 1016
+ },
+ "target-indoor-individual/wa18-30-arrow": {
+  "page": "target-indoor-individual",
+  "code": "WA18 30 Arrow",
+  "heading": "WA18 (30 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 2
+ },
+ "target-indoor-individual/wa18-60-arrow": {
+  "page": "target-indoor-individual",
+  "code": "WA18 60 Arrow",
+  "heading": "WA18 (60 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 1
+ },
+ "target-indoor-individual/wa25-30-arrow": {
+  "page": "target-indoor-individual",
+  "code": "WA25 30 Arrow",
+  "heading": "WA25 (30 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 5
+ },
+ "target-indoor-individual/wa25-60-arrow": {
+  "page": "target-indoor-individual",
+  "code": "WA25 60 Arrow",
+  "heading": "WA25 (60 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 4
+ },
+ "target-outdoor-individual/10m-36-80cm": {
+  "page": "target-outdoor-individual",
+  "code": "10m 36 80cm",
+  "heading": "10m (36 arrows 80cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1059
+ },
+ "target-outdoor-individual/20m-36-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "20M 36 122cm",
+  "heading": "20m (36 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 45
+ },
+ "target-outdoor-individual/20m-36-80cm": {
+  "page": "target-outdoor-individual",
+  "code": "20m 36 80cm",
+  "heading": "20m (36 arrows 80cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1044
+ },
+ "target-outdoor-individual/20m-72-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "20M 72 122cm",
+  "heading": "20m (72 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 46
+ },
+ "target-outdoor-individual/30m-36": {
+  "page": "target-outdoor-individual",
+  "code": "30m 36",
+  "heading": "30m (36 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 1042
+ },
+ "target-outdoor-individual/30m-36-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "30m 36 122cm",
+  "heading": "30m (36 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1041
+ },
+ "target-outdoor-individual/30m-72-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "30M 72 122cm",
+  "heading": "30m (72 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 47
+ },
+ "target-outdoor-individual/40m-144-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "40m 144 122cm",
+  "heading": "40m (144 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1039
+ },
+ "target-outdoor-individual/40m-36": {
+  "page": "target-outdoor-individual",
+  "code": "40m 36",
+  "heading": "40m (36 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 1038
+ },
+ "target-outdoor-individual/40m-36-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "40m 36 122cm",
+  "heading": "40m (36 Arrows on 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1037
+ },
+ "target-outdoor-individual/40m-72-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "40m 72 122cm",
+  "heading": "40m 72 arrows 122cm face",
+  "archived": false,
+  "known_round": true,
+  "order": 1036
+ },
+ "target-outdoor-individual/50m-144": {
+  "page": "target-outdoor-individual",
+  "code": "50M 144",
+  "heading": "50m (144 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 26
+ },
+ "target-outdoor-individual/50m-144-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "50m 144 122cm",
+  "heading": "50m (144 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1047
+ },
+ "target-outdoor-individual/50m-15": {
+  "page": "target-outdoor-individual",
+  "code": "50M 15",
+  "heading": "50m (15 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 33
+ },
+ "target-outdoor-individual/50m-36": {
+  "page": "target-outdoor-individual",
+  "code": "50m 36",
+  "heading": "50m (36 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 1057
+ },
+ "target-outdoor-individual/50m-36-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "50m 36 122cm",
+  "heading": "50m (36 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1056
+ },
+ "target-outdoor-individual/50m-72": {
+  "page": "target-outdoor-individual",
+  "code": "50M 72",
+  "heading": "50m (72 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 27
+ },
+ "target-outdoor-individual/50m-72-122cm": {
+  "page": "target-outdoor-individual",
+  "code": "50m 72 122cm",
+  "heading": "50m (72 arrows 122cm face)",
+  "archived": false,
+  "known_round": true,
+  "order": 1054
+ },
+ "target-outdoor-individual/60m-144": {
+  "page": "target-outdoor-individual",
+  "code": "60M 144",
+  "heading": "60m (144 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 23
+ },
+ "target-outdoor-individual/60m-36": {
+  "page": "target-outdoor-individual",
+  "code": "60m 36",
+  "heading": "60m (36 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 25
+ },
+ "target-outdoor-individual/60m-72": {
+  "page": "target-outdoor-individual",
+  "code": "60M 72",
+  "heading": "60m (72 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 24
+ },
+ "target-outdoor-individual/70m-12-archived": {
+  "page": "target-outdoor-individual",
+  "code": "70M 12",
+  "heading": "70m (12 Arrow - Archived)",
+  "archived": true,
+  "known_round": true,
+  "order": 1050
+ },
+ "target-outdoor-individual/70m-144": {
+  "page": "target-outdoor-individual",
+  "code": "70M 144",
+  "heading": "70m (144 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 20
+ },
+ "target-outdoor-individual/70m-18-archived": {
+  "page": "target-outdoor-individual",
+  "code": "70M 18",
+  "heading": "70m (18 Arrow - Archived)",
+  "archived": true,
+  "known_round": true,
+  "order": 1048
+ },
+ "target-outdoor-individual/70m-36": {
+  "page": "target-outdoor-individual",
+  "code": "70m 36",
+  "heading": "70m (36 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 22
+ },
+ "target-outdoor-individual/70m-72": {
+  "page": "target-outdoor-individual",
+  "code": "70M 72",
+  "heading": "70m (72 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 21
+ },
+ "target-outdoor-individual/90m-36": {
+  "page": "target-outdoor-individual",
+  "code": "90m 36",
+  "heading": "90m (36 arrows)",
+  "archived": false,
+  "known_round": true,
+  "order": 19
+ },
+ "target-outdoor-individual/dbl-wa1440": {
+  "page": "target-outdoor-individual",
+  "code": "dbl WA1440",
+  "heading": "Double WA 1440 (90,70,50,30)",
+  "archived": false,
+  "known_round": true,
+  "order": 1022
+ },
+ "target-outdoor-individual/dbl-wa1440c": {
+  "page": "target-outdoor-individual",
+  "code": "dbl WA1440C",
+  "heading": "Double WA 1440 Cadet (60,50,40,30)",
+  "archived": false,
+  "known_round": true,
+  "order": 1021
+ },
+ "target-outdoor-individual/dbl-wa1440p": {
+  "page": "target-outdoor-individual",
+  "code": "dbl WA1440P",
+  "heading": "Double WA 1440 Provisional (70,60,50,30)",
+  "archived": false,
+  "known_round": true,
+  "order": 1020
+ },
+ "target-outdoor-team/mixed-team": {
+  "page": "target-outdoor-team",
+  "code": "Mixed Team",
+  "heading": "Mixed Team",
+  "archived": false,
+  "known_round": false,
+  "order": 1999
+ },
+ "target-outdoor-team/mixed-team-eliminations": {
+  "page": "target-outdoor-team",
+  "code": "Mixed Team Eliminations",
+  "heading": "Mixed Team Eliminations",
+  "archived": false,
+  "known_round": true,
+  "order": 1018
+ },
+ "target-outdoor-team/team": {
+  "page": "target-outdoor-team",
+  "code": "Team",
+  "heading": "Team",
+  "archived": false,
+  "known_round": false,
+  "order": 1999
+ },
+ "target-outdoor-team/team-eliminations": {
+  "page": "target-outdoor-team",
+  "code": "Team Eliminations",
+  "heading": "Team Eliminations",
+  "archived": false,
+  "known_round": true,
+  "order": 1025
+ },
+ "target-outdoor-team/team-qualification": {
+  "page": "target-outdoor-team",
+  "code": "Team Qualification",
+  "heading": "Team Qualification",
+  "archived": false,
+  "known_round": true,
+  "order": 1024
+ },
+ "target-outdoor-individual/wa-900": {
+  "page": "target-outdoor-individual",
+  "code": "WA 900",
+  "heading": "WA 900",
+  "archived": false,
+  "known_round": true,
+  "order": 18
+ },
+ "target-outdoor-individual/wa1440": {
+  "page": "target-outdoor-individual",
+  "code": "WA1440",
+  "heading": "WA 1440 (90,70,50,30)",
+  "archived": false,
+  "known_round": true,
+  "order": 1027
+ },
+ "target-outdoor-individual/wa1440c": {
+  "page": "target-outdoor-individual",
+  "code": "WA1440C",
+  "heading": "WA 1440 Cadet (60,50,40,30)",
+  "archived": false,
+  "known_round": true,
+  "order": 1028
+ },
+ "target-outdoor-individual/wa1440p": {
+  "page": "target-outdoor-individual",
+  "code": "WA1440P",
+  "heading": "WA 1440 Provisional (70,60,50,30)",
+  "archived": false,
+  "known_round": true,
+  "order": 1029
+ },
+ "target-outdoor-individual/wa1440y": {
+  "page": "target-outdoor-individual",
+  "code": "WA1440Y",
+  "heading": "WA 1440 Youth (40,30,20,10)",
+  "archived": false,
+  "known_round": true,
+  "order": 1030
+ }
+}

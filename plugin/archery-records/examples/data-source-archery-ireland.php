@@ -56,6 +56,32 @@ function archery_records_class_labels() {
 }
 
 /**
+ * Settle the two spellings of a peg colour on one.
+ *
+ * The database holds both "Red Peg" and "RED" for the same peg. Left alone that splits a
+ * single record in two: Darrel Wilson's 390 from 2016 and his 394 from 2023 are the same
+ * 24 targets marked record, but they would group separately and render as two rows
+ * rather than one with the history behind it.
+ *
+ * Worth fixing at source - see suggestions.md - after which this becomes a no-op.
+ *
+ * @param string $value Peg as stored.
+ * @return string
+ */
+function archery_records_normalise_peg( $value ) {
+	$names = array(
+		'red'    => 'Red Peg',
+		'blue'   => 'Blue Peg',
+		'white'  => 'White Peg',
+		'yellow' => 'Yellow Peg',
+	);
+
+	$key = strtolower( trim( preg_replace( '/\s*peg\s*$/i', '', trim( (string) $value ) ) ) );
+
+	return isset( $names[ $key ] ) ? $names[ $key ] : trim( (string) $value );
+}
+
+/**
  * Which of the six records pages a row belongs on.
  *
  * @param string $type      Records.Type: Target, Field or 3D.
@@ -162,7 +188,7 @@ function archery_records_fetch_submissions() {
 
 		$classification = array();
 		if ( '' !== trim( (string) $row['Peg'] ) ) {
-			$classification['peg'] = trim( $row['Peg'] );
+			$classification['peg'] = archery_records_normalise_peg( $row['Peg'] );
 		}
 		$classification['class'] = $label;
 

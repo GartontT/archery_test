@@ -70,11 +70,21 @@ The plugin detects and reverses this so the published pages are correct. But the
 
 **Suggested fix:** convert the affected columns properly, with `ALTER TABLE ... CONVERT TO CHARACTER SET utf8mb4`, after taking a backup and testing on a copy. Once fixed, the plugin's repair becomes a no-op and can be left in place or removed.
 
-### 2.4 A club name is misspelled
+### 2.4 Peg colours are recorded two different ways
+
+The `Peg` column holds both `Red Peg` and `RED` for the same peg, and likewise for blue, white and yellow. 194 rows use the long form and 89 the short one.
+
+This is not cosmetic. A record is identified by its round, class, bow and peg, so the two spellings split one record into two. Darrel Wilson's 390 on 24 targets marked from 2016 and his 394 from 2023 are the same record, but they were being published as two separate rows rather than one with the earlier score behind the "+". Forty-five records were affected.
+
+The plugin now settles both spellings on the long form, so the pages are right. But the data is still inconsistent, and anything else reading the table will hit the same problem.
+
+**Suggested fix:** `UPDATE Records SET Peg = 'Red Peg' WHERE Peg = 'RED'`, and the same for the other three, after a backup.
+
+### 2.5 A club name is misspelled
 
 Mel Lawther's row on WA18 120 Arrow, Ladies Compound, gives the club as "Wickow Archers". The website says "Wicklow Archers". Here the hand-typed page is the more accurate of the two, so switching over would put the typo on the site.
 
-### 2.5 Names are spelled inconsistently
+### 2.6 Names are spelled inconsistently
 
 Comparing the database with the published pages turned up several disagreements. Some are website typos, some are database typos, and only Archery Ireland can say which is which:
 
@@ -91,11 +101,11 @@ The last one is a capitalisation slip in the database. The others are genuine qu
 
 **Suggested fix:** decide on the correct spelling for each and settle it in the database, since that is now the source. It would also be worth agreeing a convention — whether hyphenated surnames keep their hyphen, whether a married name is recorded in full — so this does not keep recurring.
 
-### 2.6 Four rows use round codes that do not exist
+### 2.7 Four rows use round codes that do not exist
 
 Four rows have a `RoundCode` that is not in `RoundTypes` at all: `Team` (two rows), `Mixed Team`, and `WAF24`. They render with the raw code as their heading rather than a proper description, and they are almost certainly meant to be one of the real team rounds.
 
-### 2.7 Round codes disagree between the two tables
+### 2.8 Round codes disagree between the two tables
 
 `Records` has `3d - 24 unmarked targets` where `RoundTypes` has `3D - 24 unmarked targets`. Only the capitalisation differs, but a straight join between the tables will miss on a case-sensitive server. The plugin matches case-insensitively to work around it.
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Archery Ireland Records
  * Description: Renders the Irish Records tables from the records database, with an expandable "+" showing previous record holders.
- * Version:     0.1.0
+ * Version:     0.2.0
  * Requires PHP: 7.0
  * License:     GPL-2.0-or-later
  *
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ARCHERY_RECORDS_VERSION', '0.1.0' );
+define( 'ARCHERY_RECORDS_VERSION', '0.2.0' );
 define( 'ARCHERY_RECORDS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'ARCHERY_RECORDS_URL', plugin_dir_url( __FILE__ ) );
 

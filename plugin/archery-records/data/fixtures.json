@@ -90,7 +90,7 @@
    "id": "2506",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -107,7 +107,7 @@
    "id": "2637",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -124,7 +124,7 @@
    "id": "2662",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -192,7 +192,7 @@
    "id": "2390",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Women"
    },
    "bow": "Barebow",
@@ -277,7 +277,7 @@
    "id": "2631",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "Ladies"
    },
    "bow": "Compound",
@@ -360,7 +360,7 @@
    "id": "2357",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -377,7 +377,7 @@
    "id": "2364",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -394,7 +394,7 @@
    "id": "2387",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -443,7 +443,7 @@
    "id": "2429",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Women"
    },
    "bow": "Compound",
@@ -492,7 +492,7 @@
    "id": "2513",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U15 Ladies"
    },
    "bow": "Compound",
@@ -509,7 +509,7 @@
    "id": "2620",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U15 Ladies"
    },
    "bow": "Compound",
@@ -543,7 +543,7 @@
    "id": "2262",
    "round": "3d-field/3d-24-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Instinctive",
@@ -560,7 +560,7 @@
    "id": "2309",
    "round": "3d-field/3d-24-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Instinctive",
@@ -671,7 +671,7 @@
    "id": "2263",
    "round": "3d-field/3d-24-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Men"
    },
    "bow": "Instinctive",
@@ -754,7 +754,7 @@
    "id": "2268",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -771,7 +771,7 @@
    "id": "2306",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -788,7 +788,7 @@
    "id": "2569",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -822,7 +822,7 @@
    "id": "2249",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -839,7 +839,7 @@
    "id": "2288",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -935,7 +935,7 @@
    "id": "2573",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Men"
    },
    "bow": "Longbow",
@@ -1144,7 +1144,7 @@
    "id": "2483",
    "round": "3d-field/3d-24-unmarked-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -1405,7 +1405,7 @@
    "id": "2505",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -1422,7 +1422,7 @@
    "id": "2636",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -1439,7 +1439,7 @@
    "id": "2661",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -1507,7 +1507,7 @@
    "id": "2391",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Women"
    },
    "bow": "Barebow",
@@ -1524,7 +1524,7 @@
    "id": "2471",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Women"
    },
    "bow": "Barebow",
@@ -1609,7 +1609,7 @@
    "id": "2632",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "Ladies"
    },
    "bow": "Compound",
@@ -1675,7 +1675,7 @@
    "id": "2304",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "U21 Gents"
    },
    "bow": "Compound",
@@ -1707,7 +1707,7 @@
    "id": "2444",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "U21 Ladies"
    },
    "bow": "Compound",
@@ -1741,7 +1741,7 @@
    "id": "2358",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -1758,7 +1758,7 @@
    "id": "2362",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -1775,7 +1775,7 @@
    "id": "2365",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -1792,7 +1792,7 @@
    "id": "2388",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -1858,7 +1858,7 @@
    "id": "2619",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U15 Ladies"
    },
    "bow": "Compound",
@@ -1892,7 +1892,7 @@
    "id": "2253",
    "round": "3d-field/3d-48-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Instinctive",
@@ -1926,7 +1926,7 @@
    "id": "2261",
    "round": "3d-field/3d-48-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Instinctive",
@@ -1943,7 +1943,7 @@
    "id": "2308",
    "round": "3d-field/3d-48-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Instinctive",
@@ -2052,7 +2052,7 @@
    "id": "2264",
    "round": "3d-field/3d-48-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Men"
    },
    "bow": "Instinctive",
@@ -2069,7 +2069,7 @@
    "id": "2285",
    "round": "3d-field/3d-48-unmarked-targets-archived",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Men"
    },
    "bow": "Instinctive",
@@ -2152,7 +2152,7 @@
    "id": "2289",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -2169,7 +2169,7 @@
    "id": "2307",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -2186,7 +2186,7 @@
    "id": "2568",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -2220,7 +2220,7 @@
    "id": "2250",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -2237,7 +2237,7 @@
    "id": "2287",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -2333,7 +2333,7 @@
    "id": "2572",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Men"
    },
    "bow": "Longbow",
@@ -2365,7 +2365,7 @@
    "id": "2313",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Women"
    },
    "bow": "Longbow",
@@ -2527,7 +2527,7 @@
    "id": "2286",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Recurve",
@@ -2576,7 +2576,7 @@
    "id": "2484",
    "round": "3d-field/3d-48-unmarked-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -2787,7 +2787,7 @@
    "id": "2622",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U18 Gents"
    },
    "bow": "Barebow",
@@ -2838,7 +2838,7 @@
    "id": "2635",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "U21 Gents"
    },
    "bow": "Barebow",
@@ -2923,7 +2923,7 @@
    "id": "2621",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Gents"
    },
    "bow": "Barebow",
@@ -3057,7 +3057,7 @@
    "id": "2408",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "U21 Ladies"
    },
    "bow": "Compound",
@@ -3091,7 +3091,7 @@
    "id": "2361",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -3108,7 +3108,7 @@
    "id": "2472",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -3176,7 +3176,7 @@
    "id": "2565",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Ladies"
    },
    "bow": "Compound",
@@ -3389,7 +3389,7 @@
    "id": "2318",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -3406,7 +3406,7 @@
    "id": "2325",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -3423,7 +3423,7 @@
    "id": "2571",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -3457,7 +3457,7 @@
    "id": "2279",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -3474,7 +3474,7 @@
    "id": "2319",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -3749,7 +3749,7 @@
    "id": "2278",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -3766,7 +3766,7 @@
    "id": "2669",
    "round": "records-field/24-target-mixed",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -3966,7 +3966,7 @@
    "id": "2353",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Women"
    },
    "bow": "Barebow",
@@ -4034,7 +4034,7 @@
    "id": "2380",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "Gents"
    },
    "bow": "Compound",
@@ -4119,7 +4119,7 @@
    "id": "2511",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "U21 Gents"
    },
    "bow": "Compound",
@@ -4170,7 +4170,7 @@
    "id": "2363",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -4187,7 +4187,7 @@
    "id": "2624",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -4426,7 +4426,7 @@
    "id": "2280",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -4443,7 +4443,7 @@
    "id": "2355",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -4720,7 +4720,7 @@
    "id": "2671",
    "round": "records-field/24-targets-marked",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -4888,7 +4888,7 @@
    "id": "2352",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "BLUE",
+    "peg": "Blue Peg",
     "class": "50+ Women"
    },
    "bow": "Barebow",
@@ -5024,7 +5024,7 @@
    "id": "2512",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "U21 Gents"
    },
    "bow": "Compound",
@@ -5075,7 +5075,7 @@
    "id": "2359",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -5314,7 +5314,7 @@
    "id": "2281",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -5331,7 +5331,7 @@
    "id": "2354",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -5348,7 +5348,7 @@
    "id": "2389",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -5625,7 +5625,7 @@
    "id": "2672",
    "round": "records-field/24-targets-unmarked",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -5710,7 +5710,7 @@
    "id": "2586",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "U18 Gents"
    },
    "bow": "Barebow",
@@ -5965,7 +5965,7 @@
    "id": "2360",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -5982,7 +5982,7 @@
    "id": "2623",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "50+ Men"
    },
    "bow": "Compound",
@@ -6050,7 +6050,7 @@
    "id": "2564",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Ladies"
    },
    "bow": "Compound",
@@ -6246,7 +6246,7 @@
    "id": "2317",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -6263,7 +6263,7 @@
    "id": "2326",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -6280,7 +6280,7 @@
    "id": "2570",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",
@@ -6314,7 +6314,7 @@
    "id": "2320",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Ladies"
    },
    "bow": "Longbow",
@@ -6423,7 +6423,7 @@
    "id": "2646",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "50+ Men"
    },
    "bow": "Longbow",
@@ -6557,7 +6557,7 @@
    "id": "2510",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "RED",
+    "peg": "Red Peg",
     "class": "U21 Gents"
    },
    "bow": "Recurve",
@@ -6640,7 +6640,7 @@
    "id": "2670",
    "round": "records-field/48-targets",
    "classification": {
-    "peg": "WHITE",
+    "peg": "White Peg",
     "class": "U15 Gents"
    },
    "bow": "Recurve",
@@ -6706,7 +6706,7 @@
    "id": "2226",
    "round": "records-field/waf24",
    "classification": {
-    "peg": "YELLOW",
+    "peg": "Yellow Peg",
     "class": "Gents"
    },
    "bow": "Longbow",

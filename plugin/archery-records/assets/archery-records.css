@@ -15,17 +15,112 @@
 	--ar-history-rule: #7ea8d4;
 	--ar-muted: #6b7785;
 	--ar-accent: #1b3a5c;
-	--ar-radius: 4px;
+	--ar-tab-bg: #eef1f4;
+	--ar-radius: 5px;
 }
 
-.archery-records-heading {
-	margin: 2em 0 0.5em;
+.archery-records-class-heading {
+	margin: 0.9em 0 0.4em;
+	font-size: 1rem;
 }
 
-.archery-records-section {
-	margin: 2.5em 0 0.25em;
+.archery-records-bow-heading {
+	margin: 0 0 0.5em;
+	font-size: 1.15rem;
+}
+
+/* ---- class tabs -----------------------------------------------------------
+ *
+ * The tabs sit directly on top of their own table, and the selected one is the same
+ * navy as the table header, so the two read as a single shape - the tab looks like the
+ * header rising up to meet it. Nothing floats free above the table.
+ */
+
+.archery-records-bow {
+	margin-bottom: 2.5em;
+}
+
+.archery-records-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.archery-records-tab {
+	position: relative;
+	/* Borders overlap so neighbouring tabs share a single hairline rather than
+	   sitting apart with a gap. */
+	margin: 0 -1px 0 0;
+	padding: 0.5em 1.05em;
+	border: 1px solid var(--ar-border);
+	border-bottom: none;
+	border-radius: var(--ar-radius) var(--ar-radius) 0 0;
+	background: var(--ar-tab-bg);
+	color: var(--ar-muted);
+	font: inherit;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.35;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: background 0.12s ease, color 0.12s ease;
+}
+
+.archery-records-tab:hover {
+	background: var(--ar-history-bg);
+	color: var(--ar-accent);
+}
+
+.archery-records-tab:focus-visible {
+	outline: 2px solid var(--ar-accent);
+	outline-offset: -3px;
+}
+
+.archery-records-tab[aria-selected="true"] {
+	z-index: 1;
+	background: var(--ar-header-bg);
+	border-color: var(--ar-header-bg);
+	color: var(--ar-header-text);
+	font-weight: 600;
+}
+
+/* The table butts straight up against the tabs, with the top corners squared off so
+   the join is invisible. */
+.archery-records-panel .archery-records-scroller {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.archery-records-panel[hidden] {
+	display: none;
+}
+
+/* The class name repeats what the selected tab already says, so it is only shown
+   when the tabs are not running - see archery-records.js. */
+.archery-records-page.is-tabbed .archery-records-class-heading {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* A rule inside a table separating the retired rounds from the live ones. */
+.archery-records-divider td {
 	padding-top: 1em;
-	border-top: 2px solid var(--ar-border);
+	color: var(--ar-muted);
+	font-size: 0.85em;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	background: var(--ar-stripe);
 }
 
 /* Wide tables scroll inside their own box rather than pushing the page sideways. */

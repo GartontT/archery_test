@@ -1,6 +1,10 @@
 # The records plugin — what it is and what to do with it
 
-This repo holds a WordPress plugin that builds the Irish Records pages from the records database, with a "+" on each row that expands to show previous holders. It's working, running on a real export of your data — 65 tables, 675 records, 133 with history.
+This repo holds a WordPress plugin that builds the Irish Records pages from the records database, with a "+" on each row that expands to show previous holders. It's working, running on a real export of your data — 630 records, 157 of them with history.
+
+Each page is a section per bow type - Compound, Recurve, Barebow and so on. Each has its own strip of class tabs sitting on top of its table, and the table lists the rounds as its rows. Because every bow has its own tabs, two of them can show different classes at once: Gents Compound alongside Ladies Recurve.
+
+That is the reverse of the old archery.ie pages, which had a table per round with the classes as rows.
 
 ## Read in this order
 

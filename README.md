@@ -6,7 +6,7 @@ Started 2 September 2026.
 
 ## Where things stand
 
-The plugin is written, working, and running on a real export of the records database: 65 tables across six pages, 675 records, 133 with history behind the "+".
+The plugin is written, working, and running on a real export of the records database: 630 records across six pages, 157 with history behind the "+". Each page is a section per bow type, each with its own strip of class tabs sitting on top of its table, and the rounds as the rows - so Gents Compound and Ladies Recurve can be open side by side.
 
 It is not yet reading the *live* database. That is one file swap plus four credentials — see `plugin/archery-records/INSTALL.md`.
 
@@ -71,7 +71,7 @@ The preview uses relative paths into `plugin/`, so serve the project root rather
 
 ## Things to raise with Archery Ireland
 
-- The `Records` table has ten records with two rows flagged as current, and a club misspelled as "Wickow Archers".
+- The `Records` table has ten records with two rows flagged as current, a club misspelled as "Wickow Archers", and peg colours recorded two ways ("Red Peg" and "RED"), which was splitting 45 records in two.
 - Accented names are double-encoded in the database (`RÃ³isÃ­n`). The plugin repairs this, but it is wrong at source.
 - `RoundTypes.Oder` and `RoundTypes.Archived` are `0` on every row — both look like they were meant to be used.
 - Four rows use round codes absent from `RoundTypes`.

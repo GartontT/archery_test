@@ -5,7 +5,7 @@
   "heading": "3D - 24 unmarked targets",
   "archived": false,
   "known_round": true,
-  "order": 1005
+  "order": 102
  },
  "3d-field/3d-24-unmarked-targets-archived": {
   "page": "3d-field",
@@ -13,7 +13,7 @@
   "heading": "3D - 24 unmarked targets",
   "archived": true,
   "known_round": true,
-  "order": 1005
+  "order": 102
  },
  "3d-field/3d-48-unmarked-targets": {
   "page": "3d-field",
@@ -21,7 +21,7 @@
   "heading": "3D - 48 unmarked targets",
   "archived": false,
   "known_round": true,
-  "order": 1000
+  "order": 101
  },
  "3d-field/3d-48-unmarked-targets-archived": {
   "page": "3d-field",
@@ -29,7 +29,7 @@
   "heading": "3D - 48 unmarked targets",
   "archived": true,
   "known_round": true,
-  "order": 1000
+  "order": 101
  },
  "records-field/24-target-mixed": {
   "page": "records-field",
@@ -37,7 +37,7 @@
   "heading": "24 target mixed",
   "archived": false,
   "known_round": true,
-  "order": 1004
+  "order": 104
  },
  "records-field/24-target-mixed-archived": {
   "page": "records-field",
@@ -45,7 +45,7 @@
   "heading": "24 target mixed",
   "archived": true,
   "known_round": true,
-  "order": 1004
+  "order": 104
  },
  "records-field/24-targets-marked": {
   "page": "records-field",
@@ -53,7 +53,7 @@
   "heading": "24 targets marked",
   "archived": false,
   "known_round": true,
-  "order": 62
+  "order": 103
  },
  "records-field/24-targets-marked-archived": {
   "page": "records-field",
@@ -61,7 +61,7 @@
   "heading": "24 targets marked",
   "archived": true,
   "known_round": true,
-  "order": 62
+  "order": 103
  },
  "records-field/24-targets-unmarked": {
   "page": "records-field",
@@ -69,7 +69,7 @@
   "heading": "24 targets unmarked",
   "archived": false,
   "known_round": true,
-  "order": 61
+  "order": 102
  },
  "records-field/24-targets-unmarked-archived": {
   "page": "records-field",
@@ -77,7 +77,7 @@
   "heading": "24 targets unmarked",
   "archived": true,
   "known_round": true,
-  "order": 61
+  "order": 102
  },
  "records-field/48-targets": {
   "page": "records-field",
@@ -85,7 +85,7 @@
   "heading": "48 targets",
   "archived": false,
   "known_round": true,
-  "order": 60
+  "order": 101
  },
  "records-field/48-targets-archived": {
   "page": "records-field",
@@ -93,7 +93,7 @@
   "heading": "48 targets",
   "archived": true,
   "known_round": true,
-  "order": 60
+  "order": 101
  },
  "records-field/waf24": {
   "page": "records-field",
@@ -101,7 +101,7 @@
   "heading": "WAF24",
   "archived": false,
   "known_round": false,
-  "order": 1999
+  "order": 900
  },
  "target-indoor-team/team-eliminations": {
   "page": "target-indoor-team",
@@ -109,7 +109,7 @@
   "heading": "Team Eliminations",
   "archived": false,
   "known_round": true,
-  "order": 1025
+  "order": 201
  },
  "target-indoor-team/team-eliminations-ind": {
   "page": "target-indoor-team",
@@ -117,7 +117,7 @@
   "heading": "Team Eliminations Ind",
   "archived": false,
   "known_round": true,
-  "order": 1009
+  "order": 201
  },
  "target-indoor-team/team-qualification": {
   "page": "target-indoor-team",
@@ -125,7 +125,7 @@
   "heading": "Team Qualification",
   "archived": false,
   "known_round": true,
-  "order": 1024
+  "order": 202
  },
  "target-indoor-team/team-qualification-ind": {
   "page": "target-indoor-team",
@@ -133,7 +133,7 @@
   "heading": "Team Qualification Ind",
   "archived": false,
   "known_round": true,
-  "order": 1006
+  "order": 202
  },
  "target-indoor-individual/wa18-12-arrow-archived": {
   "page": "target-indoor-individual",
@@ -141,7 +141,7 @@
   "heading": "WA18 (12 Arrow - Archived)",
   "archived": true,
   "known_round": true,
-  "order": 1015
+  "order": 498
  },
  "target-indoor-individual/wa18-120-arrow": {
   "page": "target-indoor-individual",
@@ -149,7 +149,7 @@
   "heading": "WA18 (120 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 0
+  "order": 487
  },
  "target-indoor-individual/wa18-15-arrow": {
   "page": "target-indoor-individual",
@@ -157,7 +157,7 @@
   "heading": "WA18 (15 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 1017
+  "order": 498
  },
  "target-indoor-individual/wa18-18-arrow-archived": {
   "page": "target-indoor-individual",
@@ -165,7 +165,7 @@
   "heading": "WA18 (18 Arrow - Archived)",
   "archived": true,
   "known_round": true,
-  "order": 1016
+  "order": 498
  },
  "target-indoor-individual/wa18-30-arrow": {
   "page": "target-indoor-individual",
@@ -173,7 +173,7 @@
   "heading": "WA18 (30 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 2
+  "order": 496
  },
  "target-indoor-individual/wa18-60-arrow": {
   "page": "target-indoor-individual",
@@ -181,7 +181,7 @@
   "heading": "WA18 (60 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 1
+  "order": 493
  },
  "target-indoor-individual/wa25-30-arrow": {
   "page": "target-indoor-individual",
@@ -189,7 +189,7 @@
   "heading": "WA25 (30 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 5
+  "order": 546
  },
  "target-indoor-individual/wa25-60-arrow": {
   "page": "target-indoor-individual",
@@ -197,7 +197,7 @@
   "heading": "WA25 (60 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 4
+  "order": 543
  },
  "target-outdoor-individual/10m-36-80cm": {
   "page": "target-outdoor-individual",
@@ -205,7 +205,7 @@
   "heading": "10m (36 arrows 80cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1059
+  "order": 191464
  },
  "target-outdoor-individual/20m-36-122cm": {
   "page": "target-outdoor-individual",
@@ -213,7 +213,7 @@
   "heading": "20m (36 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 45
+  "order": 181464
  },
  "target-outdoor-individual/20m-36-80cm": {
   "page": "target-outdoor-individual",
@@ -221,7 +221,7 @@
   "heading": "20m (36 arrows 80cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1044
+  "order": 181464
  },
  "target-outdoor-individual/20m-72-122cm": {
   "page": "target-outdoor-individual",
@@ -229,7 +229,7 @@
   "heading": "20m (72 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 46
+  "order": 181428
  },
  "target-outdoor-individual/30m-36": {
   "page": "target-outdoor-individual",
@@ -237,7 +237,7 @@
   "heading": "30m (36 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 1042
+  "order": 171464
  },
  "target-outdoor-individual/30m-36-122cm": {
   "page": "target-outdoor-individual",
@@ -245,7 +245,7 @@
   "heading": "30m (36 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1041
+  "order": 171464
  },
  "target-outdoor-individual/30m-72-122cm": {
   "page": "target-outdoor-individual",
@@ -253,7 +253,7 @@
   "heading": "30m (72 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 47
+  "order": 171428
  },
  "target-outdoor-individual/40m-144-122cm": {
   "page": "target-outdoor-individual",
@@ -261,7 +261,7 @@
   "heading": "40m (144 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1039
+  "order": 161356
  },
  "target-outdoor-individual/40m-36": {
   "page": "target-outdoor-individual",
@@ -269,7 +269,7 @@
   "heading": "40m (36 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 1038
+  "order": 161464
  },
  "target-outdoor-individual/40m-36-122cm": {
   "page": "target-outdoor-individual",
@@ -277,7 +277,7 @@
   "heading": "40m (36 Arrows on 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1037
+  "order": 161464
  },
  "target-outdoor-individual/40m-72-122cm": {
   "page": "target-outdoor-individual",
@@ -285,7 +285,7 @@
   "heading": "40m 72 arrows 122cm face",
   "archived": false,
   "known_round": true,
-  "order": 1036
+  "order": 161428
  },
  "target-outdoor-individual/50m-144": {
   "page": "target-outdoor-individual",
@@ -293,7 +293,7 @@
   "heading": "50m (144 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 26
+  "order": 151356
  },
  "target-outdoor-individual/50m-144-122cm": {
   "page": "target-outdoor-individual",
@@ -301,7 +301,7 @@
   "heading": "50m (144 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1047
+  "order": 151356
  },
  "target-outdoor-individual/50m-15": {
   "page": "target-outdoor-individual",
@@ -309,7 +309,7 @@
   "heading": "50m (15 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 33
+  "order": 151485
  },
  "target-outdoor-individual/50m-36": {
   "page": "target-outdoor-individual",
@@ -317,7 +317,7 @@
   "heading": "50m (36 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 1057
+  "order": 151464
  },
  "target-outdoor-individual/50m-36-122cm": {
   "page": "target-outdoor-individual",
@@ -325,7 +325,7 @@
   "heading": "50m (36 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1056
+  "order": 151464
  },
  "target-outdoor-individual/50m-72": {
   "page": "target-outdoor-individual",
@@ -333,7 +333,7 @@
   "heading": "50m (72 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 27
+  "order": 151428
  },
  "target-outdoor-individual/50m-72-122cm": {
   "page": "target-outdoor-individual",
@@ -341,7 +341,7 @@
   "heading": "50m (72 arrows 122cm face)",
   "archived": false,
   "known_round": true,
-  "order": 1054
+  "order": 151428
  },
  "target-outdoor-individual/60m-144": {
   "page": "target-outdoor-individual",
@@ -349,7 +349,7 @@
   "heading": "60m (144 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 23
+  "order": 141356
  },
  "target-outdoor-individual/60m-36": {
   "page": "target-outdoor-individual",
@@ -357,7 +357,7 @@
   "heading": "60m (36 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 25
+  "order": 141464
  },
  "target-outdoor-individual/60m-72": {
   "page": "target-outdoor-individual",
@@ -365,7 +365,7 @@
   "heading": "60m (72 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 24
+  "order": 141428
  },
  "target-outdoor-individual/70m-12-archived": {
   "page": "target-outdoor-individual",
@@ -373,7 +373,7 @@
   "heading": "70m (12 Arrow - Archived)",
   "archived": true,
   "known_round": true,
-  "order": 1050
+  "order": 131488
  },
  "target-outdoor-individual/70m-144": {
   "page": "target-outdoor-individual",
@@ -381,7 +381,7 @@
   "heading": "70m (144 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 20
+  "order": 131356
  },
  "target-outdoor-individual/70m-18-archived": {
   "page": "target-outdoor-individual",
@@ -389,7 +389,7 @@
   "heading": "70m (18 Arrow - Archived)",
   "archived": true,
   "known_round": true,
-  "order": 1048
+  "order": 131482
  },
  "target-outdoor-individual/70m-36": {
   "page": "target-outdoor-individual",
@@ -397,7 +397,7 @@
   "heading": "70m (36 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 22
+  "order": 131464
  },
  "target-outdoor-individual/70m-72": {
   "page": "target-outdoor-individual",
@@ -405,7 +405,7 @@
   "heading": "70m (72 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 21
+  "order": 131428
  },
  "target-outdoor-individual/90m-36": {
   "page": "target-outdoor-individual",
@@ -413,7 +413,7 @@
   "heading": "90m (36 arrows)",
   "archived": false,
   "known_round": true,
-  "order": 19
+  "order": 111464
  },
  "target-outdoor-individual/dbl-wa1440": {
   "page": "target-outdoor-individual",
@@ -421,7 +421,7 @@
   "heading": "Double WA 1440 (90,70,50,30)",
   "archived": false,
   "known_round": true,
-  "order": 1022
+  "order": 301
  },
  "target-outdoor-individual/dbl-wa1440c": {
   "page": "target-outdoor-individual",
@@ -429,7 +429,7 @@
   "heading": "Double WA 1440 Cadet (60,50,40,30)",
   "archived": false,
   "known_round": true,
-  "order": 1021
+  "order": 305
  },
  "target-outdoor-individual/dbl-wa1440p": {
   "page": "target-outdoor-individual",
@@ -437,7 +437,7 @@
   "heading": "Double WA 1440 Provisional (70,60,50,30)",
   "archived": false,
   "known_round": true,
-  "order": 1020
+  "order": 303
  },
  "target-outdoor-team/mixed-team": {
   "page": "target-outdoor-team",
@@ -445,7 +445,7 @@
   "heading": "Mixed Team",
   "archived": false,
   "known_round": false,
-  "order": 1999
+  "order": 900
  },
  "target-outdoor-team/mixed-team-eliminations": {
   "page": "target-outdoor-team",
@@ -453,7 +453,7 @@
   "heading": "Mixed Team Eliminations",
   "archived": false,
   "known_round": true,
-  "order": 1018
+  "order": 203
  },
  "target-outdoor-team/team": {
   "page": "target-outdoor-team",
@@ -461,7 +461,7 @@
   "heading": "Team",
   "archived": false,
   "known_round": false,
-  "order": 1999
+  "order": 900
  },
  "target-outdoor-team/team-eliminations": {
   "page": "target-outdoor-team",
@@ -469,7 +469,7 @@
   "heading": "Team Eliminations",
   "archived": false,
   "known_round": true,
-  "order": 1025
+  "order": 201
  },
  "target-outdoor-team/team-qualification": {
   "page": "target-outdoor-team",
@@ -477,7 +477,7 @@
   "heading": "Team Qualification",
   "archived": false,
   "known_round": true,
-  "order": 1024
+  "order": 202
  },
  "target-outdoor-individual/wa-900": {
   "page": "target-outdoor-individual",
@@ -485,7 +485,7 @@
   "heading": "WA 900",
   "archived": false,
   "known_round": true,
-  "order": 18
+  "order": 310
  },
  "target-outdoor-individual/wa1440": {
   "page": "target-outdoor-individual",
@@ -493,7 +493,7 @@
   "heading": "WA 1440 (90,70,50,30)",
   "archived": false,
   "known_round": true,
-  "order": 1027
+  "order": 302
  },
  "target-outdoor-individual/wa1440c": {
   "page": "target-outdoor-individual",
@@ -501,7 +501,7 @@
   "heading": "WA 1440 Cadet (60,50,40,30)",
   "archived": false,
   "known_round": true,
-  "order": 1028
+  "order": 306
  },
  "target-outdoor-individual/wa1440p": {
   "page": "target-outdoor-individual",
@@ -509,7 +509,7 @@
   "heading": "WA 1440 Provisional (70,60,50,30)",
   "archived": false,
   "known_round": true,
-  "order": 1029
+  "order": 304
  },
  "target-outdoor-individual/wa1440y": {
   "page": "target-outdoor-individual",
@@ -517,6 +517,6 @@
   "heading": "WA 1440 Youth (40,30,20,10)",
   "archived": false,
   "known_round": true,
-  "order": 1030
+  "order": 308
  }
 }

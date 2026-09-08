@@ -89,6 +89,80 @@ def slugify(s):
     return re.sub(r'-+', '-', s).strip('-')
 
 
+# How rounds are ordered down a page. RoundTypes.Oder is 0 on every row, so it carries
+# no information and the order has to be worked out here instead.
+#
+# The shape of it: the multi-distance rounds first (a WA1440 is the headline round of an
+# outdoor competition), then WA 900, then the single distances longest first and, at each
+# distance, the longest round first. Field and 3D follow their own small running order.
+# This reproduces how the current pages read.
+
+FAMILY = [
+    ('dbl wa1440y', 7), ('dbl wa1440c', 5), ('dbl wa1440p', 3), ('dbl wa1440', 1),
+    ('wa1440y', 8), ('wa1440c', 6), ('wa1440p', 4), ('wa1440', 2),
+    ('wa 900', 10),
+]
+
+FIELD_ORDER = [
+    ('48 targets', 1), ('3d - 48 unmarked targets', 1),
+    ('24 targets unmarked', 2), ('3d - 24 unmarked targets', 2),
+    ('24 targets marked', 3),
+    ('24 target mixed', 4),
+]
+
+TEAM_ORDER = [
+    ('mixed team qualification', 4), ('mixed team eliminations', 3),
+    ('team qualification', 2), ('team eliminations', 1),
+]
+
+
+def round_order(code, arrows):
+    """A sort position for one round within its page. Lower sorts higher."""
+    key = code.strip().lower()
+
+    for prefix, rank in FIELD_ORDER:
+        if key.startswith(prefix):
+            return 100 + rank
+
+    for prefix, rank in TEAM_ORDER:
+        if key.startswith(prefix):
+            return 200 + rank
+
+    for prefix, rank in FAMILY:
+        if key.startswith(prefix):
+            return 300 + rank
+
+    # Indoor: WA18 before WA25, longest round first within each.
+    m = re.match(r'wa(18|25)\b', key)
+    if m:
+        return 400 + (0 if m.group(1) == '18' else 50) + (999 - arrows) // 10
+
+    # Outdoor distances: furthest first, and the longest round at each distance first.
+    m = re.match(r'(\d+)m\b', key)
+    if m:
+        return 500 + (200 - int(m.group(1))) * 1000 + (1000 - arrows)
+
+    return 900
+
+
+PEG_NAMES = {
+    'red': 'Red Peg', 'blue': 'Blue Peg', 'white': 'White Peg', 'yellow': 'Yellow Peg',
+}
+
+
+def normalise_peg(value):
+    """Settle the two spellings of a peg colour on one.
+
+    The database holds both "Red Peg" and "RED" for the same peg. Left alone, that
+    splits a single record in two: Darrel Wilson's 390 from 2016 and his 394 from 2023
+    are the same 24 targets marked record, but they group separately and render as two
+    rows rather than one with history behind it.
+    """
+    key = re.sub(r'\s*peg\s*$', '', str(value).strip(), flags=re.I).strip().lower()
+
+    return PEG_NAMES.get(key, str(value).strip())
+
+
 def page_of(row):
     """Which of the seven website pages this record belongs on."""
     is_team = 'team' in row['RoundCode'].lower()
@@ -110,28 +184,16 @@ def main():
 
     # RoundCode casing differs between the two tables, so match case-insensitively.
     descriptions = {}
-    listing_order = {}
-    for i, (rc, desc, arrows, target, short, loc, typ, order, arch) in enumerate(round_rows):
+    arrows_for = {}
+    for rc, desc, arrows, target, short, loc, typ, order, arch in round_rows:
         descriptions[rc.strip().lower()] = desc.strip()
-        listing_order[rc.strip().lower()] = i
+        arrows_for[rc.strip().lower()] = int(arrows) if str(arrows).strip().isdigit() else 0
 
     records = [dict(zip(FIELDS, r)) for r in rec_rows]
     for r in records:
         for key in ('Archer', 'TeamArcher_2', 'TeamArcher_3', 'Club', 'Peg'):
             r[key] = repair_encoding(r[key])
 
-    # Keep the running order of the current pages, so the switch-over does not shuffle
-    # every table on the site. Rounds the old pages did not carry go afterwards.
-    site_order = {}
-    site_layout_path = os.path.join(HERE, '..', 'research', 'site-layout-2026-09-02.json')
-    if os.path.exists(site_layout_path):
-        site = json.load(open(site_layout_path, encoding='utf-8'))
-        n = 0
-        for page in site['pages']:
-            for rk in page['rounds']:
-                key = re.sub(r'[^a-z0-9]', '', site['rounds'][rk]['heading'].lower())
-                site_order.setdefault(key, n)
-                n += 1
 
     submissions = []
     rounds = {}
@@ -158,11 +220,7 @@ def main():
                 'heading': heading,
                 'archived': archived,
                 'known_round': descriptions.get(code.lower()) is not None,
-                # Keep the current page order where we can recognise the round; otherwise
-                # fall back to the order RoundTypes itself lists them in, which groups
-                # sensibly, rather than leaving it to chance.
-                'order': site_order.get(re.sub(r'[^a-z0-9]', '', heading.lower()),
-                                        1000 + listing_order.get(code.lower(), 999)),
+                'order': round_order( code, arrows_for.get( code.lower(), 0 ) ),
             }
         bow = BOW.get(r['Bow'], r['Bow'])
         label = CLASS.get((r['Class'], r['Gender']))
@@ -172,7 +230,7 @@ def main():
 
         classification = {}
         if r['Peg']:
-            classification['peg'] = r['Peg']
+            classification['peg'] = normalise_peg(r['Peg'])
         classification['class'] = label
 
         archers = [a for a in (r['Archer'], r['TeamArcher_2'], r['TeamArcher_3']) if a]

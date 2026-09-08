@@ -1,8 +1,9 @@
 """Build a static preview of the records pages, with no WordPress and no PHP.
 
 This is a development tool, NOT part of the plugin. It mirrors what includes/render.php
-produces and loads the plugin's real CSS and JavaScript, so the styling and the "+"
-behaviour can be looked at and clicked before the plugin is installed anywhere.
+produces and loads the plugin's real CSS and JavaScript, so the styling, the class tabs
+and the "+" behaviour can be looked at and clicked before the plugin is installed
+anywhere.
 
 It is a mirror, not the real thing: if render.php changes, this has to change with it.
 It exists only because there is no PHP runtime on this machine. Once there is one, the
@@ -46,7 +47,7 @@ BOW_RANK = {'Compound': 10, 'Recurve': 20, 'Barebow': 30,
             'Traditional': 40, 'Instinctive': 50, 'Longbow': 60}
 PEG_RANK = {'Red Peg': 10, 'Blue Peg': 20, 'White Peg': 30, 'Yellow Peg': 40}
 
-LABELS = {'peg': 'Peg', 'class': 'Class', 'bow': 'Bow', 'score': 'Score',
+LABELS = {'round': 'Round', 'peg': 'Peg', 'score': 'Score',
           'archer': 'Archer', 'date': 'Date', 'club': 'Club'}
 
 
@@ -56,6 +57,10 @@ def esc(value):
 
 def tidy(value):
     return re.sub(r'\s+', ' ', str(value).replace('\xa0', ' ')).strip()
+
+
+def slug(value):
+    return re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', str(value).lower())).strip('-')
 
 
 def record_key(round_key, classification, bow):
@@ -115,7 +120,7 @@ def build_progressions(submissions, ties_take_record=False):
 
 
 def columns_for(has_peg, archers, show_history):
-    cols = (['peg'] if has_peg else []) + ['class', 'bow', 'score']
+    cols = ['round'] + (['peg'] if has_peg else []) + ['score']
     cols += ['archer'] * max(1, archers)
     cols += ['date', 'club']
     if show_history:
@@ -123,14 +128,7 @@ def columns_for(has_peg, archers, show_history):
     return cols
 
 
-def row_sort_key(row):
-    cl = row['classification']
-    return (PEG_RANK.get(cl.get('peg', ''), 900),
-            CLASS_RANK.get(cl.get('class', ''), 900), cl.get('class', ''),
-            BOW_RANK.get(row['bow'], 900), row['bow'])
-
-
-def cells(row, columns, entry, previous, is_history):
+def cells(entry, columns, row, previous_round, is_history):
     archer_index = 0
     out = []
     for column in columns:
@@ -138,46 +136,46 @@ def cells(row, columns, entry, previous, is_history):
             continue
         classes, value = [], ''
 
-        if column in ('peg', 'class'):
-            value = row['classification'].get(column, '')
-            if is_history or (previous is not None and previous.get(column) == value):
+        if column == 'round':
+            value = entry['heading']
+            if is_history or (previous_round is not None and previous_round == value):
                 classes.append('archery-records-repeat')
-        elif column == 'bow':
-            value = row['bow']
+        elif column == 'peg':
+            value = entry['peg']
             if is_history:
                 classes.append('archery-records-repeat')
         elif column == 'score':
-            value = str(entry['score'])
+            value = str(row['score'])
             classes.append('archery-records-score')
         elif column == 'archer':
-            archers = entry['archers']
+            archers = row['archers']
             value = archers[archer_index] if archer_index < len(archers) else ''
             archer_index += 1
         elif column == 'date':
-            value = format_date(entry['date'])
+            value = format_date(row['date'])
         elif column == 'club':
-            value = entry['club']
+            value = row['club']
 
         cls = ' class="%s"' % ' '.join(classes) if classes else ''
         out.append('<td%s>%s</td>' % (cls, esc(value)))
     return ''.join(out)
 
 
-def vacant_row(row, columns, previous, stripe):
+def vacant_row(entry, columns, previous_round, stripe):
     leading = 0
     for c in columns:
-        if c in ('peg', 'class', 'bow'):
+        if c in ('round', 'peg'):
             leading += 1
         else:
             break
 
     out = ['<tr class="archery-records-row archery-records-vacant%s">' % stripe]
     for column in columns[:leading]:
-        if column == 'bow':
-            value, repeats = row['bow'], False
+        if column == 'peg':
+            value, repeats = entry['peg'], False
         else:
-            value = row['classification'].get(column, '')
-            repeats = previous is not None and previous.get(column) == value
+            value = entry['heading']
+            repeats = previous_round is not None and previous_round == value
         out.append('<td%s>%s</td>' % (' class="archery-records-repeat"' if repeats else '', esc(value)))
 
     out.append('<td class="archery-records-none" colspan="%d">no current record</td>'
@@ -186,17 +184,17 @@ def vacant_row(row, columns, previous, stripe):
     return ''.join(out)
 
 
-def render_record(row, columns, show_history, previous, index):
+def render_entry(entry, columns, show_history, previous_round, index):
     stripe = ' archery-records-row--alt' if index % 2 == 1 else ''
-    if not row['progression']:
-        return vacant_row(row, columns, previous, stripe)
+    if not entry['progression']:
+        return vacant_row(entry, columns, previous_round, stripe)
 
-    row_id = 'ar-' + hashlib.md5(row['key'].encode()).hexdigest()[:12]
-    history = row['progression'][1:] if show_history else []
+    row_id = 'ar-' + hashlib.md5(entry['key'].encode()).hexdigest()[:12]
+    history = entry['progression'][1:] if show_history else []
     ids = ['%s-h%d' % (row_id, i + 1) for i in range(len(history))]
 
     out = ['<tr class="archery-records-row%s">' % stripe]
-    out.append(cells(row, columns, row['progression'][0], previous, False))
+    out.append(cells(entry, columns, entry['progression'][0], previous_round, False))
     if 'toggle' in columns:
         out.append('<td class="archery-records-toggle-col">')
         if history:
@@ -208,9 +206,9 @@ def render_record(row, columns, show_history, previous, index):
         out.append('</td>')
     out.append('</tr>')
 
-    for i, entry in enumerate(history):
+    for i, row in enumerate(history):
         out.append('<tr class="archery-records-history" id="%s" hidden>' % esc(ids[i]))
-        out.append(cells(row, columns, entry, None, True))
+        out.append(cells(entry, columns, row, None, True))
         if 'toggle' in columns:
             out.append('<td class="archery-records-toggle-col"></td>')
         out.append('</tr>')
@@ -218,31 +216,14 @@ def render_record(row, columns, show_history, previous, index):
     return ''.join(out)
 
 
-def render_round(round_key, round_def, progressions, vacancies):
-    prefix = round_key + '|'
-    rows = {}
-    for key, prog in progressions.items():
-        if key.startswith(prefix):
-            rows[key] = {'classification': prog[0]['classification'], 'bow': prog[0]['bow'],
-                         'progression': prog, 'key': key}
-    for key, vac in vacancies.items():
-        if key.startswith(prefix) and key not in rows:
-            rows[key] = {'classification': vac['classification'], 'bow': vac['bow'],
-                         'progression': [], 'key': key}
-    if not rows:
-        return ''
+def render_table(entries):
+    has_peg = any(e['peg'] for e in entries)
+    archers = max([len(r['archers']) for e in entries for r in e['progression']] or [1])
+    show_history = any(len(e['progression']) > 1 for e in entries)
+    columns = columns_for(has_peg, archers, show_history)
 
-    ordered = sorted(rows.values(), key=row_sort_key)
-
-    has_peg = any(r['classification'].get('peg') for r in ordered)
-    archers = max([len(e['archers']) for r in ordered for e in r['progression']] or [1])
-    has_history = any(len(r['progression']) > 1 for r in ordered)
-    columns = columns_for(has_peg, archers, has_history)
-
-    heading_id = 'ar-' + hashlib.md5(round_key.encode()).hexdigest()[:10]
-    out = ['<h3 class="archery-records-heading" id="%s">%s</h3>' % (heading_id, esc(round_def['heading']))]
-    out.append('<div class="archery-records-scroller">')
-    out.append('<table class="archery-records-table" aria-labelledby="%s"><thead><tr>' % heading_id)
+    out = ['<div class="archery-records-scroller">']
+    out.append('<table class="archery-records-table"><thead><tr>')
     for column in columns:
         if column == 'toggle':
             out.append('<th scope="col" class="archery-records-toggle-col">'
@@ -251,13 +232,111 @@ def render_round(round_key, round_def, progressions, vacancies):
             out.append('<th scope="col">%s</th>' % esc(LABELS[column]))
     out.append('</tr></thead><tbody>')
 
-    previous = None
-    for i, row in enumerate(ordered):
-        out.append(render_record(row, columns, has_history, previous, i))
-        previous = dict(row['classification'], bow=row['bow'])
+    previous_round, archived_seen = None, False
+    for i, entry in enumerate(entries):
+        if entry['archived'] and not archived_seen:
+            out.append('<tr class="archery-records-divider"><td colspan="%d">No longer shot for</td></tr>'
+                       % len(columns))
+            archived_seen, previous_round = True, None
+        out.append(render_entry(entry, columns, show_history, previous_round, i))
+        previous_round = entry['heading']
 
     out.append('</tbody></table></div>')
     return ''.join(out)
+
+
+def make_entry(round_key, round_def, key, sample, progression):
+    return {
+        'key': key,
+        'heading': round_def['heading'],
+        'order': round_def.get('order', 9999),
+        'archived': bool(round_def.get('archived')),
+        'class': sample['classification'].get('class', ''),
+        'peg': sample['classification'].get('peg', ''),
+        'bow': sample['bow'],
+        'progression': progression,
+    }
+
+
+def entry_sort_key(e):
+    return (1 if e['archived'] else 0, e['order'], PEG_RANK.get(e['peg'], 900), e['heading'])
+
+
+def build_page(page_slug, rounds, progressions, vacancies):
+    """Return (html, table_count) for one page."""
+    page_rounds = {k: v for k, v in rounds.items() if v.get('page') == page_slug}
+
+    entries, seen = [], set()
+    for round_key, round_def in page_rounds.items():
+        prefix = round_key + '|'
+        for key, prog in progressions.items():
+            if key.startswith(prefix) and key not in seen:
+                seen.add(key)
+                entries.append(make_entry(round_key, round_def, key, prog[0], prog))
+        for key, vac in vacancies.items():
+            if key.startswith(prefix) and key not in seen:
+                seen.add(key)
+                entries.append(make_entry(round_key, round_def, key, vac, []))
+
+    # Bow first, then class: each bow gets its own tab strip, so two bows can show
+    # different classes at the same time.
+    bows = {}
+    for e in entries:
+        bows.setdefault(e['bow'], {}).setdefault(e['class'], []).append(e)
+
+    for bow in list(bows):
+        for cls in list(bows[bow]):
+            if not any(e['progression'] for e in bows[bow][cls]):
+                del bows[bow][cls]
+            else:
+                bows[bow][cls].sort(key=entry_sort_key)
+        if not bows[bow]:
+            del bows[bow]
+
+    ordered_bows = sorted(bows, key=lambda b: (BOW_RANK.get(b, 900), b))
+    if not ordered_bows:
+        return '', 0
+
+    page_id = 'ar-' + hashlib.md5(page_slug.encode()).hexdigest()[:8]
+
+    out = ['<div class="archery-records-page" data-page="%s">' % esc(page_slug)]
+    out.append('<noscript><style>'
+               '.archery-records-page .archery-records-tabs{display:none}'
+               '.archery-records-page .archery-records-panel[hidden]{display:block !important}'
+               '.archery-records-page .archery-records-history{display:table-row !important}'
+               '.archery-records-page .archery-records-toggle{display:none}'
+               '</style></noscript>')
+
+    tables = 0
+    for bow in ordered_bows:
+        bow_id = '%s-%s' % (page_id, slug(bow))
+        ordered_classes = sorted(bows[bow], key=lambda c: (CLASS_RANK.get(c, 900), c))
+
+        out.append('<div class="archery-records-bow">')
+        out.append('<h3 class="archery-records-bow-heading">%s</h3>' % esc(bow))
+
+        out.append('<div class="archery-records-tabs" role="tablist" aria-label="%s record class">'
+                   % esc(bow))
+        for i, cls in enumerate(ordered_classes):
+            out.append('<button type="button" role="tab" class="archery-records-tab" id="%s-tab-%s" '
+                       'aria-controls="%s-panel-%s" aria-selected="%s" tabindex="%s">%s</button>'
+                       % (bow_id, slug(cls), bow_id, slug(cls),
+                          'true' if i == 0 else 'false', '0' if i == 0 else '-1', esc(cls)))
+        out.append('</div>')
+
+        for i, cls in enumerate(ordered_classes):
+            out.append('<section class="archery-records-panel" role="tabpanel" id="%s-panel-%s" '
+                       'aria-labelledby="%s-tab-%s"%s>'
+                       % (bow_id, slug(cls), bow_id, slug(cls), '' if i == 0 else ' hidden'))
+            out.append('<h4 class="archery-records-class-heading">%s</h4>' % esc(cls))
+            out.append(render_table(bows[bow][cls]))
+            tables += 1
+            out.append('</section>')
+
+        out.append('</div>')
+
+    out.append('</div>')
+    return ''.join(out), tables
 
 
 PAGE_TEMPLATE = """<!doctype html>
@@ -266,7 +345,7 @@ PAGE_TEMPLATE = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} - preview</title>
-<link rel="stylesheet" href="../plugin/archery-records/assets/archery-records.css">
+<link rel="stylesheet" href="../plugin/archery-records/assets/archery-records.css?v={assets}">
 <style>
  body {{ font-family: system-ui, -apple-system, "Segoe UI", sans-serif; margin: 0;
         padding: 1.5rem 2rem 4rem; color: #1c1e21; background: #fff; max-width: 1100px; }}
@@ -285,7 +364,7 @@ PAGE_TEMPLATE = """<!doctype html>
 <div class="preview-nav">{nav}</div>
 <h1>{title}</h1>
 {body}
-<script src="../plugin/archery-records/assets/archery-records.js"></script>
+<script src="../plugin/archery-records/assets/archery-records.js?v={assets}"></script>
 </body>
 </html>
 """
@@ -300,39 +379,31 @@ def main():
     vacancies = {record_key(s['round'], s['classification'], s['bow']): s
                  for s in submissions if is_vacant(s)}
 
+    # Stamp the asset links with the files' modification times. Without this the
+    # browser happily serves a cached copy of the JavaScript from before the tabs
+    # existed, and the tabs then appear to do nothing at all.
+    assets_dir = os.path.join(PLUGIN, 'assets')
+    assets = str(int(max(os.path.getmtime(os.path.join(assets_dir, name))
+                         for name in ('archery-records.css', 'archery-records.js'))))
+
     os.makedirs(PREVIEW, exist_ok=True)
-    nav = ' '.join('<a href="%s.html">%s</a>' % (slug, esc(title)) for slug, title in PAGES)
+    nav = ' '.join('<a href="%s.html">%s</a>' % (p, esc(t)) for p, t in PAGES)
 
     totals = {}
     for page_slug, page_title in PAGES:
-        page_rounds = {k: v for k, v in rounds.items() if v.get('page') == page_slug}
-        ordered = sorted(page_rounds.items(),
-                         key=lambda kv: (1 if kv[1].get('archived') else 0,
-                                         kv[1].get('order', 9999), kv[1]['heading']))
-
-        body, rendered, archived_seen = [], 0, False
-        for round_key, round_def in ordered:
-            table = render_round(round_key, round_def, progressions, vacancies)
-            if not table:
-                continue
-            if round_def.get('archived') and not archived_seen and rendered > 0:
-                body.append('<h3 class="archery-records-section">Archived records - no longer shot for</h3>')
-                archived_seen = True
-            body.append(table)
-            rendered += 1
-
-        totals[page_slug] = rendered
+        body, tables = build_page(page_slug, rounds, progressions, vacancies)
+        totals[page_slug] = tables
         with open(os.path.join(PREVIEW, page_slug + '.html'), 'w', encoding='utf-8') as f:
-            f.write(PAGE_TEMPLATE.format(title=esc(page_title), nav=nav,
-                                         body='<div class="archery-records-page">' + ''.join(body) + '</div>'))
+            f.write(PAGE_TEMPLATE.format(title=esc(page_title), nav=nav, body=body, assets=assets))
 
     index = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
              '<meta name="viewport" content="width=device-width, initial-scale=1">',
              '<title>Irish Records preview</title></head><body>',
              '<h1>Irish Records - plugin preview</h1>',
              '<p>Real data, exported 7 September 2026.</p><ul>']
-    for slug, title in PAGES:
-        index.append('<li><a href="%s.html">%s</a> - %d tables</li>' % (slug, esc(title), totals[slug]))
+    for page_slug, title in PAGES:
+        index.append('<li><a href="%s.html">%s</a> - %d tables</li>'
+                     % (page_slug, esc(title), totals[page_slug]))
     index.append('</ul></body></html>')
     with open(os.path.join(PREVIEW, 'index.html'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(index))
@@ -343,8 +414,8 @@ def main():
     print('records        :', len(progressions))
     print('with history   :', with_history)
     print('vacant slots   :', len(vacancies))
-    for slug, title in PAGES:
-        print('   %-28s %2d tables' % (slug, totals[slug]))
+    for page_slug, title in PAGES:
+        print('   %-28s %3d tables' % (page_slug, totals[page_slug]))
 
 
 if __name__ == '__main__':
